@@ -1,0 +1,5 @@
+Processing multi-omics integration for INTEGRATION_TEST_002
+Sample type: Control
+Cancer type: CRC
+Stage: Early
+Processing completed at: Fri Sep  5 16:04:20 PDT 2025

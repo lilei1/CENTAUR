@@ -5,3 +5,5 @@
 2025-09-05 15:36:04	1.6s	dreamy_kowalevski	OK	bf60c672e8db4418b88c51bd6bfb4f78	1536231d-86a1-42ff-ae2d-b9b8f601ed36	nextflow run workflows/rnaseq_test_simple.nf
 2025-09-05 15:48:14	1.6s	chaotic_mendel	ERR	e1c3524c4fd555c3d4de3989c2f0e0ae	d97584f4-c300-4417-86bd-d2c788b1b97c	nextflow run workflows/wes_test_simple.nf
 2025-09-05 15:51:43	1.7s	small_tesla	OK	dd1ba21d8650eac5553d6c015208af75	6a7a81f4-d337-487a-9c5e-161660bce02a	nextflow run workflows/wes_test_simple.nf
+2025-09-05 16:01:30	1.4s	voluminous_shaw	ERR	0c6d8ad8221a441060a27a0365fbdfa9	393c1aff-0512-46c9-b576-10fe92201fa1	nextflow run workflows/integration_test_simple.nf
+2025-09-05 16:04:19	2s	elegant_pauling	OK	5fce29bf57a359596c5b40ba51bc69dd	adee3a2a-9011-4244-9c0a-d62c167853d5	nextflow run workflows/integration_test_simple.nf
