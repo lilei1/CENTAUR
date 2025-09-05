@@ -1,0 +1,4 @@
+2025-09-05 15:27:21	-	astonishing_pike	-	97e9d8dfbc1517a496f3afc6093d08cc	f5819693-4764-4ed0-bbbd-29c732f258af	nextflow run workflows/methylation_test.nf
+2025-09-05 15:27:27	-	golden_pesquet	-	dd8af82913b1f735858197853ccdf390	c9d945da-6819-4ce0-9cfe-2d02cc99113f	nextflow run workflows/methylation_test.nf
+2025-09-05 15:28:33	863ms	friendly_banach	ERR	a778ec4d2b7526241bfd23ba693325c4	5a94f049-2710-49a0-a3d9-3c6c8a998cf6	nextflow run workflows/methylation_test_simple.nf
+2025-09-05 15:29:02	3s	ecstatic_euler	ERR	69074b4ba0d19a84a6fc2554f567a731	23af6c95-66e2-4599-b4a5-b2e6b0bc7bd7	nextflow run workflows/methylation_test_simple.nf

@@ -1,0 +1,117 @@
+Sep-05 15:29:02.782 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/methylation_test_simple.nf
+Sep-05 15:29:02.818 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 15:29:02.829 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 15:29:02.845 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 15:29:02.846 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 15:29:02.847 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 15:29:02.852 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 15:29:02.880 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 15:29:02.886 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/methylation_test_simple.nf` [ecstatic_euler] DSL2 - revision: 69074b4ba0
+Sep-05 15:29:02.887 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 15:29:02.887 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 15:29:02.912 [main] DEBUG nextflow.Session - Session UUID: 23af6c95-66e2-4599-b4a5-b2e6b0bc7bd7
+Sep-05 15:29:02.912 [main] DEBUG nextflow.Session - Run name: ecstatic_euler
+Sep-05 15:29:02.912 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 15:29:02.915 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 15:29:02.917 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 15:29:02.931 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (04:27 PDT)
+  System: Mac OS X 15.6.1
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
+  Encoding: UTF-8 (UTF-8)
+  Process: 17885@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (197.9 MB) - Swap: 0 (0)
+Sep-05 15:29:02.937 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 15:29:02.938 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 15:29:02.944 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 15:29:02.948 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 15:29:02.950 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 15:29:02.961 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 15:29:02.965 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 15:29:02.991 [main] DEBUG nextflow.Session - Session start
+Sep-05 15:29:03.304 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 15:29:03.309 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 15:29:03.312 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1e98b788] - activable => nextflow.secret.LocalSecretsProvider@1e98b788
+Sep-05 15:29:03.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 15:29:03.378 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 15:29:03.380 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-05 15:29:03.383 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-05 15:29:03.383 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-05 15:29:03.396 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'METHYLATION_TEST': maxForks=0; fair=false; array=0
+Sep-05 15:29:03.421 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: METHYLATION_TEST
+Sep-05 15:29:03.422 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Sep-05 15:29:03.422 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > METHYLATION_TEST
+Sep-05 15:29:03.422 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_eaee0429bbcba797: /Users/lilei/Downloads/CENTAUR/workflows/methylation_test_simple.nf
+Sep-05 15:29:03.422 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-05 15:29:03.423 [main] DEBUG nextflow.Session - Session await
+Sep-05 15:29:03.459 [Actor Thread 11] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_002/TEST_002_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_002/TEST_002_R1.fastq.gz
+Sep-05 15:29:03.459 [Actor Thread 9] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_001/TEST_001_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_001/TEST_001_R1.fastq.gz
+Sep-05 15:29:03.459 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_003/TEST_003_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_003/TEST_003_R1.fastq.gz
+Sep-05 15:29:03.489 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 15:29:03.490 [Task submitter] INFO  nextflow.Session - [e2/cfc6d6] Submitted process > METHYLATION_TEST (TEST_002)
+Sep-05 15:29:03.495 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 15:29:03.495 [Task submitter] INFO  nextflow.Session - [8a/12220b] Submitted process > METHYLATION_TEST (TEST_001)
+Sep-05 15:29:03.497 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 15:29:03.498 [Task submitter] INFO  nextflow.Session - [bf/4b9c45] Submitted process > METHYLATION_TEST (TEST_003)
+Sep-05 15:29:04.723 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: METHYLATION_TEST (TEST_001); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/8a/12220b5800d3d28a366a2cc2466dbc]
+Sep-05 15:29:04.723 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 15:29:04.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: METHYLATION_TEST (TEST_003); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/bf/4b9c454c6930ba3430919658331b75]
+Sep-05 15:29:04.727 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: METHYLATION_TEST (TEST_002); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/e2/cfc6d6689dcbeabbcdccbd2adc4293]
+Sep-05 15:29:04.736 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-05 15:29:04.736 [Actor Thread 7] ERROR nextflow.extension.OperatorImpl - @unknown
+groovy.lang.MissingPropertyException: Exception evaluating property 'text' for nextflow.util.ArrayBag, Reason: groovy.lang.MissingPropertyException: No such property: text for class: java.lang.String
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAtIterable(DefaultGroovyMethods.java:8649)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAt(DefaultGroovyMethods.java:8637)
+	at groovy.lang.MetaClassImpl$7.getProperty(MetaClassImpl.java:2114)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_eaee0429bbcba797$_runScript_closure2$_closure9$_closure13.doCall(Script_eaee0429bbcba797:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.extension.MapOp$_apply_closure1.doCall(MapOp.groovy:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:108)
+	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
+	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
+	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
+	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
+	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Sep-05 15:29:04.743 [Actor Thread 7] DEBUG nextflow.Session - Session aborted -- Cause: Exception evaluating property 'text' for nextflow.util.ArrayBag, Reason: groovy.lang.MissingPropertyException: No such property: text for class: java.lang.String
+Sep-05 15:29:04.748 [Actor Thread 7] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] map
+  [operator] view
+
+Sep-05 15:29:04.749 [Actor Thread 7] ERROR nextflow.Nextflow - 
+    ================================================
+    CENTAUR Methylation Test failed!
+    ================================================
+    
+    Error: Exception evaluating property 'text' for nextflow.util.ArrayBag, Reason: groovy.lang.MissingPropertyException: No such property: text for class: java.lang.String
+    
+Sep-05 15:29:04.750 [Actor Thread 7] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
+Sep-05 15:29:04.750 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-05 15:29:04.750 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-05 15:29:04.751 [main] INFO  nextflow.Nextflow - 
+    ================================================
+    CENTAUR Methylation Test completed successfully!
+    ================================================
+    
+Sep-05 15:29:04.755 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3.4s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Sep-05 15:29:04.986 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-05 15:29:04.992 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

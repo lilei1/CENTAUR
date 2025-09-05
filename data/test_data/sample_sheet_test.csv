@@ -1,0 +1,4 @@
+sample_id,cancer_type,stage,sample_type,cfDNA_file,rnaseq_file,wes_tumor_file,wes_normal_file
+TEST_001,CRC,Early,Cancer,TEST_001/TEST_001_R1.fastq.gz,,,
+TEST_002,CRC,Early,Control,TEST_002/TEST_002_R1.fastq.gz,,,
+TEST_003,Lung,Late,Cancer,TEST_003/TEST_003_R1.fastq.gz,,,

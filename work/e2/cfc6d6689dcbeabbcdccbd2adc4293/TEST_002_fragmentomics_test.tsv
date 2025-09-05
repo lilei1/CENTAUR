@@ -1,0 +1,2 @@
+sample_id	total_fragments	mean_insert_size	median_insert_size	std_insert_size	short_fragments_ratio	long_fragments_ratio	fragment_entropy	CCCA_frequency	CCCG_frequency	CCCT_frequency	CCCC_frequency
+TEST_002	955	163.08914312355847	170.41768409124154	26.760459405394087	0.14536874174973208	0.13656785893742807	3.4513724503435284	0.13668370866444823	0.046524845139855706	0.09665005366151327	0.07263404646112027

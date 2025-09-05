@@ -1,0 +1,6 @@
+Processing methylation data for TEST_003
+Sample type: Cancer
+Cancer type: Lung
+Stage: Late
+Input file: TEST_003_R1.fastq.gz
+Processing completed at: Fri Sep  5 15:29:03 PDT 2025
