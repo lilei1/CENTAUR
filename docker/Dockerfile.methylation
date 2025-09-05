@@ -1,0 +1,46 @@
+# CENTAUR Multi-Omics Pipeline - Methylation Analysis Docker Image
+# Extends base image with methylation-specific tools
+
+FROM centaur-base:latest
+
+# Install additional methylation analysis tools
+RUN pip3 install \
+    methylkit \
+    pycoMeth \
+    methplotlib \
+    nanopore-methylation-utilities
+
+# Install R packages for methylation analysis
+RUN R -e "install.packages(c('methylKit', 'DSS', 'dmrseq', 'ChAMP', 'minfi', 'IlluminaHumanMethylation450kanno.ilmn12.hg19', 'IlluminaHumanMethylationEPICanno.ilm10b4.hg19'), repos='https://bioconductor.org/packages/release/bioc/')"
+
+# Install Biscuit
+RUN wget https://github.com/zwdzwd/biscuit/releases/download/v0.3.14/biscuit-0.3.14-Linux-x86_64.tar.bz2 && \
+    tar -xjf biscuit-0.3.14-Linux-x86_64.tar.bz2 && \
+    mv biscuit-0.3.14-Linux-x86_64/biscuit /usr/local/bin/ && \
+    rm -rf biscuit-0.3.14-Linux-x86_64*
+
+# Install deepTools
+RUN pip3 install deeptools
+
+# Install IGV tools
+RUN wget https://data.broadinstitute.org/igv/projects/downloads/2.8.9/IGV_2.8.9.zip && \
+    unzip IGV_2.8.9.zip && \
+    mv IGV_2.8.9/igvtools /usr/local/bin/ && \
+    rm -rf IGV_2.8.9*
+
+# Create methylation analysis scripts directory
+RUN mkdir -p /opt/methylation_scripts
+
+# Copy methylation analysis scripts
+COPY scripts/methylation_analysis.py /opt/methylation_scripts/
+COPY scripts/fragmentomics_analysis.py /opt/methylation_scripts/
+COPY scripts/dmr_analysis.R /opt/methylation_scripts/
+
+# Make scripts executable
+RUN chmod +x /opt/methylation_scripts/*.py /opt/methylation_scripts/*.R
+
+# Set working directory
+WORKDIR /workspace
+
+# Set default command
+CMD ["/bin/bash"]

@@ -1,0 +1,73 @@
+# CENTAUR Multi-Omics Pipeline - RNA-seq Analysis Docker Image
+# Extends base image with RNA-seq-specific tools
+
+FROM centaur-base:latest
+
+# Install additional RNA-seq analysis tools
+RUN pip3 install \
+    htseq \
+    cufflinks \
+    kallisto \
+    salmon \
+    alevin-fry \
+    scanpy \
+    scanpy-tutorials \
+    cellranger \
+    velocyto
+
+# Install R packages for RNA-seq analysis
+RUN R -e "install.packages(c('DESeq2', 'edgeR', 'limma', 'DEGseq', 'NOISeq', 'EBSeq', 'SAMseq', 'sleuth', 'tximport', 'biomaRt', 'org.Hs.eg.db', 'KEGG.db', 'GO.db', 'ReactomePA', 'clusterProfiler', 'enrichplot', 'DOSE', 'pathview', 'gage', 'gageData', 'GSVA', 'GSEABase', 'fgsea', 'msigdbr', 'xCell', 'MCPcounter', 'ESTIMATE', 'immunedeconv', 'IOBR', 'EPIC', 'quanTIseq', 'TIMER', 'CIBERSORT', 'CIBERSORTx'), repos='https://bioconductor.org/packages/release/bioc/')"
+
+# Install HISAT2
+RUN wget https://cloud.biohpc.swmed.edu/index.php/s/oTtGWbWjaxsQ2Ho/download && \
+    tar -xzf hisat2-2.2.1-Linux_x86_64.zip && \
+    mv hisat2-2.2.1/hisat2* /usr/local/bin/ && \
+    rm -rf hisat2-2.2.1*
+
+# Install Salmon
+RUN wget https://github.com/COMBINE-lab/salmon/releases/download/v1.9.0/salmon-1.9.0_linux_x86_64.tar.gz && \
+    tar -xzf salmon-1.9.0_linux_x86_64.tar.gz && \
+    mv salmon-1.9.0_linux_x86_64/bin/salmon /usr/local/bin/ && \
+    rm -rf salmon-1.9.0_linux_x86_64*
+
+# Install Kallisto
+RUN wget https://github.com/pachterlab/kallisto/releases/download/v0.46.2/kallisto_linux-v0.46.2.tar.gz && \
+    tar -xzf kallisto_linux-v0.46.2.tar.gz && \
+    mv kallisto_linux-v0.46.2/kallisto /usr/local/bin/ && \
+    rm -rf kallisto_linux-v0.46.2*
+
+# Install StringTie
+RUN wget https://github.com/gpertea/stringtie/releases/download/v2.2.1/stringtie-2.2.1.Linux_x86_64.tar.gz && \
+    tar -xzf stringtie-2.2.1.Linux_x86_64.tar.gz && \
+    mv stringtie-2.2.1.Linux_x86_64/stringtie /usr/local/bin/ && \
+    rm -rf stringtie-2.2.1.Linux_x86_64*
+
+# Install Cufflinks
+RUN wget https://github.com/cole-trapnell-lab/cufflinks/releases/download/v2.2.1/cufflinks-2.2.1.Linux_x86_64.tar.gz && \
+    tar -xzf cufflinks-2.2.1.Linux_x86_64.tar.gz && \
+    mv cufflinks-2.2.1.Linux_x86_64/cuff* /usr/local/bin/ && \
+    rm -rf cufflinks-2.2.1.Linux_x86_64*
+
+# Install HTSeq
+RUN pip3 install HTSeq
+
+# Install DESeq2 and related packages
+RUN R -e "BiocManager::install(c('DESeq2', 'edgeR', 'limma', 'DEGseq', 'NOISeq', 'EBSeq', 'SAMseq', 'sleuth', 'tximport', 'biomaRt', 'org.Hs.eg.db', 'KEGG.db', 'GO.db', 'ReactomePA', 'clusterProfiler', 'enrichplot', 'DOSE', 'pathview', 'gage', 'gageData', 'GSVA', 'GSEABase', 'fgsea', 'msigdbr', 'xCell', 'MCPcounter', 'ESTIMATE', 'immunedeconv', 'IOBR', 'EPIC', 'quanTIseq', 'TIMER', 'CIBERSORT', 'CIBERSORTx'))"
+
+# Create RNA-seq analysis scripts directory
+RUN mkdir -p /opt/rnaseq_scripts
+
+# Copy RNA-seq analysis scripts
+COPY scripts/rnaseq_analysis.py /opt/rnaseq_scripts/
+COPY scripts/differential_expression.R /opt/rnaseq_scripts/
+COPY scripts/immune_signatures.R /opt/rnaseq_scripts/
+COPY scripts/pathway_analysis.R /opt/rnaseq_scripts/
+
+# Make scripts executable
+RUN chmod +x /opt/rnaseq_scripts/*.py /opt/rnaseq_scripts/*.R
+
+# Set working directory
+WORKDIR /workspace
+
+# Set default command
+CMD ["/bin/bash"]

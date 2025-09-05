@@ -1,0 +1,151 @@
+# CENTAUR Multi-Omics Pipeline - Base Docker Image
+# Contains common bioinformatics tools and Python/R environments
+
+FROM ubuntu:20.04
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+ENV PYTHONPATH=/usr/local/lib/python3.8/site-packages
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    wget \
+    curl \
+    git \
+    build-essential \
+    zlib1g-dev \
+    libbz2-dev \
+    liblzma-dev \
+    libncurses5-dev \
+    libncursesw5-dev \
+    libssl-dev \
+    libffi-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    libgdbm-dev \
+    libdb5.3-dev \
+    libexpat1-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    libyaml-dev \
+    libz-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libfreetype6-dev \
+    liblcms2-dev \
+    libwebp-dev \
+    libtiff5-dev \
+    libopenjp2-7-dev \
+    libharfbuzz-dev \
+    libfribidi-dev \
+    libxcb1-dev \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python 3.8
+RUN apt-get update && apt-get install -y \
+    python3.8 \
+    python3.8-dev \
+    python3.8-distutils \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install R
+RUN apt-get update && apt-get install -y \
+    r-base \
+    r-base-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install bioinformatics tools
+RUN apt-get update && apt-get install -y \
+    samtools \
+    bcftools \
+    bedtools \
+    bwa \
+    bowtie2 \
+    fastqc \
+    multiqc \
+    trim-galore \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python packages
+RUN pip3 install --upgrade pip && \
+    pip3 install \
+    numpy \
+    pandas \
+    scipy \
+    matplotlib \
+    seaborn \
+    scikit-learn \
+    pysam \
+    biopython \
+    pybedtools \
+    pyBigWig \
+    plotly \
+    dash \
+    jupyter \
+    notebook \
+    ipykernel
+
+# Install R packages
+RUN R -e "install.packages(c('dplyr', 'ggplot2', 'DESeq2', 'edgeR', 'limma', 'pheatmap', 'VennDiagram', 'RColorBrewer', 'gplots', 'reshape2', 'stringr', 'readr', 'tidyr', 'purrr', 'magrittr', 'tibble', 'data.table', 'jsonlite', 'httr', 'xml2', 'rvest', 'devtools'), repos='https://cran.rstudio.com/')"
+
+# Install additional bioinformatics tools
+RUN wget https://github.com/FelixKrueger/TrimGalore/archive/0.6.7.tar.gz && \
+    tar -xzf 0.6.7.tar.gz && \
+    mv TrimGalore-0.6.7/trim_galore /usr/local/bin/ && \
+    rm -rf TrimGalore-0.6.7 0.6.7.tar.gz
+
+# Install Bismark
+RUN wget https://github.com/FelixKrueger/Bismark/archive/0.24.0.tar.gz && \
+    tar -xzf 0.24.0.tar.gz && \
+    mv Bismark-0.24.0 /opt/bismark && \
+    ln -s /opt/bismark/bismark /usr/local/bin/ && \
+    ln -s /opt/bismark/bismark_genome_preparation /usr/local/bin/ && \
+    ln -s /opt/bismark/bismark_methylation_extractor /usr/local/bin/ && \
+    rm -rf 0.24.0.tar.gz
+
+# Install MethylDackel
+RUN wget https://github.com/dpryan79/MethylDackel/releases/download/v0.6.1/MethylDackel-0.6.1-Linux-x86_64.tar.bz2 && \
+    tar -xjf MethylDackel-0.6.1-Linux-x86_64.tar.bz2 && \
+    mv MethylDackel-0.6.1-Linux-x86_64/MethylDackel /usr/local/bin/ && \
+    rm -rf MethylDackel-0.6.1-Linux-x86_64*
+
+# Install STAR
+RUN wget https://github.com/alexdobin/STAR/releases/download/2.7.10a/STAR_2.7.10a_Linux_x86_64_static.tar.gz && \
+    tar -xzf STAR_2.7.10a_Linux_x86_64_static.tar.gz && \
+    mv STAR_2.7.10a_Linux_x86_64_static/STAR /usr/local/bin/ && \
+    rm -rf STAR_2.7.10a_Linux_x86_64_static*
+
+# Install featureCounts
+RUN wget https://sourceforge.net/projects/subread/files/subread-2.0.3/subread-2.0.3-Linux-x86_64.tar.gz && \
+    tar -xzf subread-2.0.3-Linux-x86_64.tar.gz && \
+    mv subread-2.0.3-Linux-x86_64/bin/featureCounts /usr/local/bin/ && \
+    rm -rf subread-2.0.3-Linux-x86_64*
+
+# Install GATK
+RUN wget https://github.com/broadinstitute/gatk/releases/download/4.2.0.0/gatk-4.2.0.0.zip && \
+    unzip gatk-4.2.0.0.zip && \
+    mv gatk-4.2.0.0/gatk /usr/local/bin/ && \
+    rm -rf gatk-4.2.0.0*
+
+# Install ANNOVAR
+RUN wget http://www.openbioinformatics.org/annovar/download/0wgxR2rIVP/annovar.latest.tar.gz && \
+    tar -xzf annovar.latest.tar.gz && \
+    mv annovar /opt/ && \
+    ln -s /opt/annovar/annovar /usr/local/bin/ && \
+    rm -rf annovar.latest.tar.gz
+
+# Install Picard
+RUN wget https://github.com/broadinstitute/picard/releases/download/2.27.5/picard.jar && \
+    mv picard.jar /usr/local/bin/ && \
+    echo '#!/bin/bash\njava -jar /usr/local/bin/picard.jar "$@"' > /usr/local/bin/picard && \
+    chmod +x /usr/local/bin/picard
+
+# Create working directory
+WORKDIR /workspace
+
+# Set default command
+CMD ["/bin/bash"]

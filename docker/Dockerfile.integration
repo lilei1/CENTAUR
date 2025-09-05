@@ -1,0 +1,98 @@
+# CENTAUR Multi-Omics Pipeline - Integration Analysis Docker Image
+# Extends base image with multi-omics integration tools
+
+FROM centaur-base:latest
+
+# Install additional integration analysis tools
+RUN pip3 install \
+    scanpy \
+    scanpy-tutorials \
+    cellranger \
+    velocyto \
+    harmony \
+    combat \
+    seurat \
+    monocle3 \
+    scvelo \
+    scvi-tools \
+    scanorama \
+    bbknn \
+    scib \
+    scgen \
+    scvi-tools \
+    scvelo \
+    scanorama \
+    bbknn \
+    scib \
+    scgen
+
+# Install R packages for integration analysis
+RUN R -e "install.packages(c('Seurat', 'SeuratWrappers', 'SeuratDisk', 'SeuratData', 'harmony', 'sva', 'limma', 'DESeq2', 'edgeR', 'DEGseq', 'NOISeq', 'EBSeq', 'SAMseq', 'sleuth', 'tximport', 'biomaRt', 'org.Hs.eg.db', 'KEGG.db', 'GO.db', 'ReactomePA', 'clusterProfiler', 'enrichplot', 'DOSE', 'pathview', 'gage', 'gageData', 'GSVA', 'GSEABase', 'fgsea', 'msigdbr', 'xCell', 'MCPcounter', 'ESTIMATE', 'immunedeconv', 'IOBR', 'EPIC', 'quanTIseq', 'TIMER', 'CIBERSORT', 'CIBERSORTx', 'ComplexHeatmap', 'circlize', 'RColorBrewer', 'ggplot2', 'dplyr', 'tidyr', 'readr', 'stringr', 'purrr', 'magrittr', 'tibble', 'data.table', 'jsonlite', 'httr', 'xml2', 'rvest', 'devtools'), repos='https://bioconductor.org/packages/release/bioc/')"
+
+# Install machine learning tools
+RUN pip3 install \
+    xgboost \
+    lightgbm \
+    catboost \
+    optuna \
+    hyperopt \
+    skopt \
+    bayesian-optimization \
+    shap \
+    lime \
+    eli5 \
+    pdpbox \
+    plotly \
+    dash \
+    streamlit \
+    gradio \
+    jupyter \
+    notebook \
+    ipykernel \
+    jupyterlab \
+    jupyterlab-git \
+    jupyterlab-lsp \
+    jupyterlab-github \
+    jupyterlab-gitlab \
+    jupyterlab-google-drive \
+    jupyterlab-google-drive \
+    jupyterlab-google-drive \
+    jupyterlab-google-drive
+
+# Install additional visualization tools
+RUN pip3 install \
+    plotly \
+    dash \
+    streamlit \
+    gradio \
+    bokeh \
+    altair \
+    pygal \
+    matplotlib \
+    seaborn \
+    plotnine \
+    ggplot \
+    pyplot \
+    mplfinance \
+    plotly-express \
+    plotly-dash \
+    plotly-streamlit \
+    plotly-gradio
+
+# Create integration analysis scripts directory
+RUN mkdir -p /opt/integration_scripts
+
+# Copy integration analysis scripts
+COPY scripts/integration_analysis.py /opt/integration_scripts/
+COPY scripts/feature_selection.R /opt/integration_scripts/
+COPY scripts/ml_analysis.py /opt/integration_scripts/
+COPY scripts/visualization.py /opt/integration_scripts/
+
+# Make scripts executable
+RUN chmod +x /opt/integration_scripts/*.py /opt/integration_scripts/*.R
+
+# Set working directory
+WORKDIR /workspace
+
+# Set default command
+CMD ["/bin/bash"]

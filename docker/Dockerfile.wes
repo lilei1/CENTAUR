@@ -1,0 +1,66 @@
+# CENTAUR Multi-Omics Pipeline - WES Analysis Docker Image
+# Extends base image with WES-specific tools
+
+FROM centaur-base:latest
+
+# Install additional WES analysis tools
+RUN pip3 install \
+    vcfpy \
+    cyvcf2 \
+    pysam \
+    pybedtools \
+    pyBigWig \
+    sigprofiler \
+    sigprofilerplotting \
+    sigprofilerExtractor \
+    sigprofilerSimulator
+
+# Install R packages for WES analysis
+RUN R -e "install.packages(c('VariantAnnotation', 'BSgenome.Hsapiens.UCSC.hg38', 'TxDb.Hsapiens.UCSC.hg38.knownGene', 'org.Hs.eg.db', 'SomaticSignatures', 'deconstructSigs', 'MutationalPatterns', 'maftools', 'ComplexHeatmap', 'circlize', 'RColorBrewer', 'ggplot2', 'dplyr', 'tidyr', 'readr', 'stringr', 'purrr', 'magrittr', 'tibble', 'data.table', 'jsonlite', 'httr', 'xml2', 'rvest', 'devtools'), repos='https://bioconductor.org/packages/release/bioc/')"
+
+# Install additional variant calling tools
+RUN wget https://github.com/bcbio/bcbio-nextgen/releases/download/v1.2.9/bcbio-nextgen-1.2.9.tar.gz && \
+    tar -xzf bcbio-nextgen-1.2.9.tar.gz && \
+    pip3 install bcbio-nextgen-1.2.9/ && \
+    rm -rf bcbio-nextgen-1.2.9*
+
+# Install VEP
+RUN wget https://github.com/Ensembl/ensembl-vep/releases/download/release/108/ensembl-vep-108.tar.gz && \
+    tar -xzf ensembl-vep-108.tar.gz && \
+    mv ensembl-vep-108 /opt/vep && \
+    ln -s /opt/vep/vep /usr/local/bin/ && \
+    rm -rf ensembl-vep-108.tar.gz
+
+# Install CNV analysis tools
+RUN pip3 install \
+    cnvkit \
+    sequenza \
+    facets \
+    ascat \
+    copynumber \
+    DNAcopy
+
+# Install mutational signature tools
+RUN pip3 install \
+    sigprofiler \
+    sigprofilerplotting \
+    sigprofilerExtractor \
+    sigprofilerSimulator
+
+# Create WES analysis scripts directory
+RUN mkdir -p /opt/wes_scripts
+
+# Copy WES analysis scripts
+COPY scripts/variant_analysis.py /opt/wes_scripts/
+COPY scripts/tmb_analysis.R /opt/wes_scripts/
+COPY scripts/cnv_analysis.R /opt/wes_scripts/
+COPY scripts/mutational_signatures.R /opt/wes_scripts/
+
+# Make scripts executable
+RUN chmod +x /opt/wes_scripts/*.py /opt/wes_scripts/*.R
+
+# Set working directory
+WORKDIR /workspace
+
+# Set default command
+CMD ["/bin/bash"]
