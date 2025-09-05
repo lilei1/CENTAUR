@@ -262,6 +262,180 @@ The pipeline generates the following biomarker features:
 - **Survival Prediction**: Multi-omics signature → survival outcomes
 - **Treatment Response**: Biomarker patterns → therapy response
 
+## 🔬 **Biomarker Discovery & Hypothesis Testing**
+
+### **Statistical Testing Framework**
+
+The pipeline implements comprehensive statistical testing for biomarker discovery:
+
+#### **Univariate Testing:**
+- **Differentially Methylated Regions (DMRs)**: Cancer vs control comparison
+- **Differentially Expressed Genes (DEGs)**: Expression analysis
+- **Immune Signature Scores**: Pathway enrichment analysis
+- **Fragmentomics Features**: Statistical significance testing
+
+#### **Cross-Modality Association:**
+- **Methylation-Expression Correlation**: Enhancer methylation vs gene expression
+- **Fragmentomics-Methylation Association**: Fragment patterns vs methylation
+- **Immune-Variant Correlation**: Immune signatures vs mutation burden
+
+#### **Biological Hypothesis Testing:**
+- **Immune Regulatory Regions**: DMRs in immune enhancers correlate with IFN-gamma expression
+- **Cancer Driver Proximity**: Methylation changes near cancer genes
+- **Chromatin Organization**: Fragmentomics patterns at regulatory elements
+
+### **Feature Filtering Criteria**
+
+#### **Methylation Features:**
+- **DMR Significance**: FDR < 0.05
+- **Methylation Difference**: Δβ ≥ 15-20%
+- **Biological Relevance**: Immune enhancers, cancer driver regions
+
+#### **Fragmentomics Features:**
+- **Short Fragment %**: AUC > 0.7 at TSSs
+- **Entropy**: AUC > 0.7 in enhancer regions
+- **End Motifs**: Significant frequency shifts (e.g., CCCA motif loss)
+
+#### **Mutation Features:**
+- **TMB**: Tumor mutational burden threshold
+- **Driver Mutations**: TP53, KRAS, APC, EGFR, BRAF
+- **Recurrent Variants**: High-frequency cancer mutations
+
+#### **Expression Features:**
+- **Immune Signatures**: IFN-gamma, T-cell exhaustion, cytotoxic T-cells
+- **DEGs**: Significant differential expression
+- **Pathway Enrichment**: GSEA analysis
+
+### **Example Biomarkers Identified:**
+
+| Biomarker | Type | AUC | Description |
+|-----------|------|-----|-------------|
+| Short Fragment % near TSSs of immune genes | Fragmentomics | 0.82 | Chromatin accessibility marker |
+| Fragmentation entropy in enhancer regions | Fragmentomics | 0.76 | Chromatin organization |
+| End motif frequency shifts (CCCA loss) | Fragmentomics | ~0.7 | Nucleosome positioning |
+| Hypomethylated immune enhancer near CXCL9 | Methylation | 0.85 | Epigenetic regulation |
+| IFN-gamma immune activation | Expression | 0.88 | Immune response |
+| TMB (mutations/Mb) | Variants | 0.91 | Genomic instability |
+
+## 🤖 **Machine Learning Readiness**
+
+### **ML-Ready Feature Matrices**
+
+The pipeline generates clean, versioned feature matrices optimized for machine learning:
+
+#### **Output Formats:**
+- **TSV**: Tab-separated values for compatibility
+- **Parquet**: Efficient columnar storage
+- **H5AD**: Anndata format for single-cell analysis
+- **CSV**: Standard comma-separated format
+
+#### **Feature Metadata:**
+- **Feature Names**: Standardized naming convention
+- **QC Flags**: Quality control indicators
+- **Batch IDs**: Batch effect tracking
+- **Fold IDs**: Cross-validation splits
+
+### **Machine Learning Models**
+
+#### **Primary Models:**
+- **XGBoost**: Gradient boosting for tabular multimodal data
+- **Random Forest**: Ensemble learning for feature importance
+- **Support Vector Machine (SVM)**: Linear and non-linear classification
+
+#### **Baseline Models:**
+- **Logistic Regression**: Linear baseline for classification
+- **Linear Regression**: Baseline for continuous outcomes
+- **Naive Bayes**: Probabilistic baseline classifier
+
+#### **Advanced Models:**
+- **Neural Networks**: Deep learning for complex patterns
+- **Ensemble Methods**: Model stacking and voting
+- **Transfer Learning**: Pre-trained models for feature extraction
+
+### **Model Specifications**
+
+#### **Input Features:**
+- **Shortlisted Biomarkers**: Only statistically significant features
+- **Feature Selection**: Univariate filtering → multivariate modeling
+- **Dimensionality**: Optimized feature set (10-50 features)
+
+#### **Output Predictions:**
+- **Binary Classification**: Cancer vs Healthy
+- **Multi-class Classification**: CRC vs Lung vs Breast
+- **Regression**: Continuous outcomes (survival, TMB)
+- **Probability Scores**: Confidence intervals
+
+#### **Model Interpretation:**
+- **SHAP Values**: SHapley Additive exPlanations for feature importance
+- **Feature Importance**: Tree-based model rankings
+- **Partial Dependence**: Feature effect visualization
+- **Permutation Importance**: Cross-validation based importance
+
+### **ML Pipeline Workflow**
+
+#### **1. Feature Engineering:**
+```python
+# Example feature selection pipeline
+features = {
+    'methylation': ['DMR_immune_enhancers', 'DMR_cancer_drivers'],
+    'fragmentomics': ['short_fragment_TSS', 'entropy_enhancers'],
+    'variants': ['TMB', 'KRAS_mutation', 'TP53_mutation'],
+    'expression': ['IFN_gamma', 'T_cell_exhaustion']
+}
+```
+
+#### **2. Model Training:**
+```python
+# XGBoost classifier
+import xgboost as xgb
+model = xgb.XGBClassifier(
+    n_estimators=100,
+    max_depth=6,
+    learning_rate=0.1,
+    random_state=42
+)
+```
+
+#### **3. Model Evaluation:**
+- **Cross-validation**: 5-fold stratified CV
+- **Performance Metrics**: AUC, precision, recall, F1-score
+- **Feature Importance**: SHAP analysis
+- **Model Comparison**: Multiple algorithms
+
+### **Biomarker Selection Principle**
+
+#### **Univariate Stage:**
+- **Statistical Significance**: FDR < 0.05
+- **Effect Size**: Clinically meaningful differences
+- **Biological Relevance**: Known cancer pathways
+- **Reproducibility**: Cross-validation stability
+
+#### **Multivariate Stage:**
+- **Feature Interaction**: Multi-omics combinations
+- **Model Performance**: AUC > 0.8 for clinical utility
+- **Interpretability**: Biologically meaningful features
+- **Clinical Translation**: Actionable biomarkers
+
+### **Expected Outcomes**
+
+#### **Early Detection Classifier:**
+- **Target**: Cancer vs Healthy classification
+- **Performance**: AUC > 0.9
+- **Features**: 10-15 top biomarkers
+- **Interpretation**: SHAP-based feature importance
+
+#### **Tissue-of-Origin Inference:**
+- **Target**: CRC vs Lung vs Breast classification
+- **Performance**: AUC > 0.85 per class
+- **Features**: Tissue-specific biomarkers
+- **Clinical Utility**: Treatment selection
+
+#### **Feature Importance Interpretation:**
+- **Top Features**: Consistent across models
+- **Biological Validation**: Literature support
+- **Clinical Relevance**: Actionable insights
+- **Reproducibility**: Cross-study validation
+
 ## Configuration
 
 ### Resource Allocation
