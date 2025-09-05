@@ -1,0 +1,16 @@
+feature	importance	model	rank
+methylation_enhancer_CRXIP		NaiveBayes	1
+methylation_SNP_upstream_PRK		NaiveBayes	2
+methylation_SNP_near_MYC		NaiveBayes	3
+methylation_hypo_TMB_RNF		NaiveBayes	4
+methylation_hyper_TMB_PDL1		NaiveBayes	5
+methylation_global_hypo_CpG		NaiveBayes	6
+fragmentomics_short_TFBS		NaiveBayes	7
+fragmentomics_entropy		NaiveBayes	8
+fragmentomics_WPS_STAT1		NaiveBayes	9
+fragmentomics_end_motif_CTCF		NaiveBayes	10
+variant_KRAS_mutation		NaiveBayes	11
+variant_TMB		NaiveBayes	12
+variant_DNA_burden		NaiveBayes	13
+expression_immune_activation		NaiveBayes	14
+expression_t_cell_exhaustion		NaiveBayes	15

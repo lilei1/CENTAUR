@@ -1,0 +1,16 @@
+feature	importance	model	rank
+methylation_enhancer_CRXIP		SVM	1
+methylation_SNP_upstream_PRK		SVM	2
+methylation_SNP_near_MYC		SVM	3
+methylation_hypo_TMB_RNF		SVM	4
+methylation_hyper_TMB_PDL1		SVM	5
+methylation_global_hypo_CpG		SVM	6
+fragmentomics_short_TFBS		SVM	7
+fragmentomics_entropy		SVM	8
+fragmentomics_WPS_STAT1		SVM	9
+fragmentomics_end_motif_CTCF		SVM	10
+variant_KRAS_mutation		SVM	11
+variant_TMB		SVM	12
+variant_DNA_burden		SVM	13
+expression_immune_activation		SVM	14
+expression_t_cell_exhaustion		SVM	15

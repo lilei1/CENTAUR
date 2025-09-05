@@ -1,74 +1,97 @@
-Sep-05 15:36:04.338 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/rnaseq_test_simple.nf
-Sep-05 15:36:04.376 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Sep-05 15:36:04.387 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Sep-05 15:36:04.404 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-05 15:36:04.404 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-05 15:36:04.405 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Sep-05 15:36:04.412 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-05 15:36:04.440 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Sep-05 15:36:04.448 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/rnaseq_test_simple.nf` [dreamy_kowalevski] DSL2 - revision: bf60c672e8
-Sep-05 15:36:04.449 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-05 15:36:04.449 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-05 15:36:04.476 [main] DEBUG nextflow.Session - Session UUID: 1536231d-86a1-42ff-ae2d-b9b8f601ed36
-Sep-05 15:36:04.476 [main] DEBUG nextflow.Session - Run name: dreamy_kowalevski
-Sep-05 15:36:04.476 [main] DEBUG nextflow.Session - Executor pool size: 16
-Sep-05 15:36:04.480 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-05 15:36:04.483 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:36:04.496 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-05 16:01:30.438 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/integration_test_simple.nf
+Sep-05 16:01:30.478 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 16:01:30.489 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 16:01:30.509 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 16:01:30.509 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 16:01:30.510 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 16:01:30.515 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 16:01:30.553 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 16:01:30.561 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/integration_test_simple.nf` [voluminous_shaw] DSL2 - revision: 0c6d8ad822
+Sep-05 16:01:30.562 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 16:01:30.562 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 16:01:30.587 [main] DEBUG nextflow.Session - Session UUID: 393c1aff-0512-46c9-b576-10fe92201fa1
+Sep-05 16:01:30.587 [main] DEBUG nextflow.Session - Run name: voluminous_shaw
+Sep-05 16:01:30.588 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 16:01:30.591 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 16:01:30.594 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 16:01:30.607 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (04:27 PDT)
   System: Mac OS X 15.6.1
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
   Encoding: UTF-8 (UTF-8)
-  Process: 19555@LiLei-M36.local [127.0.0.1]
-  CPUs: 16 - Mem: 48 GB (375.7 MB) - Swap: 0 (0)
-Sep-05 15:36:04.503 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
-Sep-05 15:36:04.503 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
-Sep-05 15:36:04.512 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-05 15:36:04.516 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Sep-05 15:36:04.518 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-05 15:36:04.530 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-05 15:36:04.533 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Sep-05 15:36:04.563 [main] DEBUG nextflow.Session - Session start
-Sep-05 15:36:04.884 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Sep-05 15:36:04.889 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
-Sep-05 15:36:04.892 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@798cb6d9] - activable => nextflow.secret.LocalSecretsProvider@798cb6d9
-Sep-05 15:36:04.960 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Sep-05 15:36:04.960 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-05 15:36:04.963 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Sep-05 15:36:04.966 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
-Sep-05 15:36:04.967 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Sep-05 15:36:04.982 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'RNASEQ_TEST': maxForks=0; fair=false; array=0
-Sep-05 15:36:05.011 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: RNASEQ_TEST
-Sep-05 15:36:05.012 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Sep-05 15:36:05.013 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RNASEQ_TEST
-Sep-05 15:36:05.013 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_2f590891e0efbfb6: /Users/lilei/Downloads/CENTAUR/workflows/rnaseq_test_simple.nf
-Sep-05 15:36:05.013 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Sep-05 15:36:05.013 [main] DEBUG nextflow.Session - Session await
-Sep-05 15:36:05.050 [Actor Thread 14] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/rnaseq/RNA_TEST_002/RNA_TEST_002_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/rnaseq/RNA_TEST_002/RNA_TEST_002_R1.fastq.gz
-Sep-05 15:36:05.050 [Actor Thread 12] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/rnaseq/RNA_TEST_001/RNA_TEST_001_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/rnaseq/RNA_TEST_001/RNA_TEST_001_R1.fastq.gz
-Sep-05 15:36:05.050 [Actor Thread 16] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/rnaseq/RNA_TEST_003/RNA_TEST_003_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/rnaseq/RNA_TEST_003/RNA_TEST_003_R1.fastq.gz
-Sep-05 15:36:05.082 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:36:05.083 [Task submitter] INFO  nextflow.Session - [56/591d9d] Submitted process > RNASEQ_TEST (RNA_TEST_002)
-Sep-05 15:36:05.088 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:36:05.089 [Task submitter] INFO  nextflow.Session - [fe/ec2716] Submitted process > RNASEQ_TEST (RNA_TEST_003)
-Sep-05 15:36:05.092 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:36:05.092 [Task submitter] INFO  nextflow.Session - [a3/ac2299] Submitted process > RNASEQ_TEST (RNA_TEST_001)
-Sep-05 15:36:05.379 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: RNASEQ_TEST (RNA_TEST_002); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/56/591d9d095691da6e175aee856d2fc8]
-Sep-05 15:36:05.380 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:36:05.380 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: RNASEQ_TEST (RNA_TEST_003); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/fe/ec2716ba45c0ff9f8239ae797c8872]
-Sep-05 15:36:05.381 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: RNASEQ_TEST (RNA_TEST_001); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/a3/ac22990ff643a7d5ac6af68c2b74f3]
-Sep-05 15:36:05.391 [main] DEBUG nextflow.Session - Session await > all processes finished
-Sep-05 15:36:05.483 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Sep-05 15:36:05.484 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Sep-05 15:36:05.485 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Sep-05 15:36:05.486 [main] INFO  nextflow.Nextflow - 
+  Process: 23801@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (624.9 MB) - Swap: 0 (0)
+Sep-05 16:01:30.614 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 16:01:30.614 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 16:01:30.621 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 16:01:30.625 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 16:01:30.627 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 16:01:30.638 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 16:01:30.642 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 16:01:30.669 [main] DEBUG nextflow.Session - Session start
+Sep-05 16:01:31.011 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 16:01:31.015 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 16:01:31.019 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@38883a31] - activable => nextflow.secret.LocalSecretsProvider@38883a31
+Sep-05 16:01:31.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 16:01:31.096 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 16:01:31.098 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-05 16:01:31.101 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-05 16:01:31.102 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-05 16:01:31.117 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MULTIOMICS_INTEGRATION_TEST': maxForks=0; fair=false; array=0
+Sep-05 16:01:31.148 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: MULTIOMICS_INTEGRATION_TEST
+Sep-05 16:01:31.149 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Sep-05 16:01:31.149 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIOMICS_INTEGRATION_TEST
+Sep-05 16:01:31.150 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_46ceb08eaf22bf22: /Users/lilei/Downloads/CENTAUR/workflows/integration_test_simple.nf
+Sep-05 16:01:31.150 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-05 16:01:31.150 [main] DEBUG nextflow.Session - Session await
+Sep-05 16:01:31.178 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Process MULTIOMICS_INTEGRATION_TEST > collision check staging file names: [WES_TEST_003_tmb.txt:1, RNA_TEST_003_gene_counts.txt:1, TEST_003_fragmentomics_test.tsv:2, RNA_TEST_003_immune_signatures.tsv:1, WES_TEST_003_variant_features.tsv:1]
+Sep-05 16:01:31.178 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Process MULTIOMICS_INTEGRATION_TEST > collision check staging file names: [TEST_001_fragmentomics_test.tsv:2, WES_TEST_001_variant_features.tsv:1, WES_TEST_001_tmb.txt:1, RNA_TEST_001_immune_signatures.tsv:1, RNA_TEST_001_gene_counts.txt:1]
+Sep-05 16:01:31.178 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Process MULTIOMICS_INTEGRATION_TEST > collision check staging file names: [WES_TEST_002_tmb.txt:1, TEST_002_fragmentomics_test.tsv:2, RNA_TEST_002_immune_signatures.tsv:1, RNA_TEST_002_gene_counts.txt:1, WES_TEST_002_variant_features.tsv:1]
+Sep-05 16:01:31.180 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MULTIOMICS_INTEGRATION_TEST (1); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_001_fragmentomics_test.tsv
+Sep-05 16:01:31.188 [Actor Thread 15] ERROR nextflow.processor.TaskProcessor - Error executing process > 'MULTIOMICS_INTEGRATION_TEST (1)'
+
+Caused by:
+  Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_001_fragmentomics_test.tsv
+
+
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Sep-05 16:01:31.189 [Actor Thread 15] DEBUG nextflow.Session - Session aborted -- Cause: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_001_fragmentomics_test.tsv
+Sep-05 16:01:31.195 [Actor Thread 15] DEBUG nextflow.Session - The following nodes are still active:
+[process] MULTIOMICS_INTEGRATION_TEST
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Sep-05 16:01:31.197 [Actor Thread 15] ERROR nextflow.Nextflow - 
     ================================================
-    CENTAUR RNA-seq Test completed successfully!
+    CENTAUR Multi-Omics Integration Test failed!
     ================================================
     
-Sep-05 15:36:05.487 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=599ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
-Sep-05 15:36:05.636 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Sep-05 15:36:05.644 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Sep-05 15:36:05.644 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+    Error: null
+    
+Sep-05 16:01:31.197 [Actor Thread 15] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
+Sep-05 16:01:31.198 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-05 16:01:31.198 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-05 16:01:31.198 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-05 16:01:31.198 [main] INFO  nextflow.Nextflow - 
+    ================================================
+    CENTAUR Multi-Omics Integration Test completed successfully!
+    ================================================
+    
+Sep-05 16:01:31.199 [Actor Thread 13] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MULTIOMICS_INTEGRATION_TEST; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Sep-05 16:01:31.199 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MULTIOMICS_INTEGRATION_TEST (2); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_002_fragmentomics_test.tsv
+Sep-05 16:01:31.199 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MULTIOMICS_INTEGRATION_TEST (3); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_003_fragmentomics_test.tsv
+Sep-05 16:01:31.200 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-05 16:01:31.407 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-05 16:01:31.416 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

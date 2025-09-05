@@ -1,0 +1,5 @@
+	auc	precision	recall	f1_score	cv_auc_mean	cv_auc_std	cv_scores
+RandomForest	1.0	1.0	1.0	1.0	1.0	0.0	[1. 1. 1. 1. 1.]
+LogisticRegression	1.0	1.0	1.0	1.0	1.0	0.0	[1. 1. 1. 1. 1.]
+NaiveBayes	1.0	1.0	1.0	1.0	1.0	0.0	[1. 1. 1. 1. 1.]
+SVM	1.0	1.0	1.0	1.0	1.0	0.0	[1. 1. 1. 1. 1.]

@@ -1,97 +1,212 @@
-Sep-05 16:01:30.438 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/integration_test_simple.nf
-Sep-05 16:01:30.478 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Sep-05 16:01:30.489 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Sep-05 16:01:30.509 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-05 16:01:30.509 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-05 16:01:30.510 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Sep-05 16:01:30.515 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-05 16:01:30.553 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Sep-05 16:01:30.561 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/integration_test_simple.nf` [voluminous_shaw] DSL2 - revision: 0c6d8ad822
-Sep-05 16:01:30.562 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-05 16:01:30.562 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-05 16:01:30.587 [main] DEBUG nextflow.Session - Session UUID: 393c1aff-0512-46c9-b576-10fe92201fa1
-Sep-05 16:01:30.587 [main] DEBUG nextflow.Session - Run name: voluminous_shaw
-Sep-05 16:01:30.588 [main] DEBUG nextflow.Session - Executor pool size: 16
-Sep-05 16:01:30.591 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-05 16:01:30.594 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 16:01:30.607 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-05 16:15:19.614 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/biomarker_ml_workflow.nf
+Sep-05 16:15:19.658 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 16:15:19.671 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 16:15:19.690 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 16:15:19.690 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 16:15:19.692 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 16:15:19.698 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 16:15:19.739 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 16:15:19.750 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/biomarker_ml_workflow.nf` [distraught_ramanujan] DSL2 - revision: 070e568b13
+Sep-05 16:15:19.750 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 16:15:19.751 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 16:15:19.784 [main] DEBUG nextflow.Session - Session UUID: 90e24576-2f94-4862-8457-562d5b2fb8a0
+Sep-05 16:15:19.784 [main] DEBUG nextflow.Session - Run name: distraught_ramanujan
+Sep-05 16:15:19.784 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 16:15:19.789 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 16:15:19.793 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 16:15:19.810 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (04:27 PDT)
   System: Mac OS X 15.6.1
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
   Encoding: UTF-8 (UTF-8)
-  Process: 23801@LiLei-M36.local [127.0.0.1]
-  CPUs: 16 - Mem: 48 GB (624.9 MB) - Swap: 0 (0)
-Sep-05 16:01:30.614 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
-Sep-05 16:01:30.614 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
-Sep-05 16:01:30.621 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-05 16:01:30.625 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Sep-05 16:01:30.627 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-05 16:01:30.638 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-05 16:01:30.642 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Sep-05 16:01:30.669 [main] DEBUG nextflow.Session - Session start
-Sep-05 16:01:31.011 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Sep-05 16:01:31.015 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
-Sep-05 16:01:31.019 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@38883a31] - activable => nextflow.secret.LocalSecretsProvider@38883a31
-Sep-05 16:01:31.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Sep-05 16:01:31.096 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-05 16:01:31.098 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Sep-05 16:01:31.101 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
-Sep-05 16:01:31.102 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Sep-05 16:01:31.117 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MULTIOMICS_INTEGRATION_TEST': maxForks=0; fair=false; array=0
-Sep-05 16:01:31.148 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: MULTIOMICS_INTEGRATION_TEST
-Sep-05 16:01:31.149 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Sep-05 16:01:31.149 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIOMICS_INTEGRATION_TEST
-Sep-05 16:01:31.150 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_46ceb08eaf22bf22: /Users/lilei/Downloads/CENTAUR/workflows/integration_test_simple.nf
-Sep-05 16:01:31.150 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Sep-05 16:01:31.150 [main] DEBUG nextflow.Session - Session await
-Sep-05 16:01:31.178 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Process MULTIOMICS_INTEGRATION_TEST > collision check staging file names: [WES_TEST_003_tmb.txt:1, RNA_TEST_003_gene_counts.txt:1, TEST_003_fragmentomics_test.tsv:2, RNA_TEST_003_immune_signatures.tsv:1, WES_TEST_003_variant_features.tsv:1]
-Sep-05 16:01:31.178 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Process MULTIOMICS_INTEGRATION_TEST > collision check staging file names: [TEST_001_fragmentomics_test.tsv:2, WES_TEST_001_variant_features.tsv:1, WES_TEST_001_tmb.txt:1, RNA_TEST_001_immune_signatures.tsv:1, RNA_TEST_001_gene_counts.txt:1]
-Sep-05 16:01:31.178 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Process MULTIOMICS_INTEGRATION_TEST > collision check staging file names: [WES_TEST_002_tmb.txt:1, TEST_002_fragmentomics_test.tsv:2, RNA_TEST_002_immune_signatures.tsv:1, RNA_TEST_002_gene_counts.txt:1, WES_TEST_002_variant_features.tsv:1]
-Sep-05 16:01:31.180 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=MULTIOMICS_INTEGRATION_TEST (1); work-dir=null
-  error [nextflow.exception.ProcessUnrecoverableException]: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_001_fragmentomics_test.tsv
-Sep-05 16:01:31.188 [Actor Thread 15] ERROR nextflow.processor.TaskProcessor - Error executing process > 'MULTIOMICS_INTEGRATION_TEST (1)'
+  Process: 28397@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (83.5 MB) - Swap: 0 (0)
+Sep-05 16:15:19.817 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 16:15:19.817 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 16:15:19.826 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 16:15:19.830 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 16:15:19.833 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 16:15:19.845 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 16:15:19.849 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 16:15:19.881 [main] DEBUG nextflow.Session - Session start
+Sep-05 16:15:20.318 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 16:15:20.324 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 16:15:20.327 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@251a90ce] - activable => nextflow.secret.LocalSecretsProvider@251a90ce
+Sep-05 16:15:20.389 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 16:15:20.389 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 16:15:20.392 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-05 16:15:20.396 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-05 16:15:20.397 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-05 16:15:20.412 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'BIOMARKER_DISCOVERY': maxForks=0; fair=false; array=0
+Sep-05 16:15:20.440 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 16:15:20.440 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 16:15:20.440 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ML_TRAINING': maxForks=0; fair=false; array=0
+Sep-05 16:15:20.452 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BIOMARKER_DISCOVERY, ML_TRAINING
+Sep-05 16:15:20.453 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Sep-05 16:15:20.453 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BIOMARKER_DISCOVERY
+Sep-05 16:15:20.453 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ML_TRAINING
+Sep-05 16:15:20.453 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_0f2a03fcf390c54c: /Users/lilei/Downloads/CENTAUR/workflows/biomarker_ml_workflow.nf
+Sep-05 16:15:20.454 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-05 16:15:20.454 [main] DEBUG nextflow.Session - Session await
+Sep-05 16:15:20.483 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (ML_TEST_001); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `BIOMARKER_DISCOVERY (ML_TEST_001)` script contains error(s)
+Sep-05 16:15:20.483 [Actor Thread 11] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (RandomForest); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `ML_TRAINING (RandomForest)` script contains error(s)
+Sep-05 16:15:20.486 [Actor Thread 12] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (NaiveBayes); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `ML_TRAINING (NaiveBayes)` script contains error(s)
+Sep-05 16:15:20.486 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Sep-05 16:15:20.487 [Actor Thread 14] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (XGBoost); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `ML_TRAINING (XGBoost)` script contains error(s)
+Sep-05 16:15:20.487 [Actor Thread 9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (LogisticRegression); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `ML_TRAINING (LogisticRegression)` script contains error(s)
+Sep-05 16:15:20.493 [Actor Thread 15] ERROR nextflow.processor.TaskProcessor - Error executing process > 'BIOMARKER_DISCOVERY (ML_TEST_001)'
 
 Caused by:
-  Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_001_fragmentomics_test.tsv
+  No such variable: Simulate -- Check script 'workflows/biomarker_ml_workflow.nf' at line: 18
 
 
+Source block:
+      """
+      echo "Starting biomarker discovery for ${sample_id}" > ${sample_id}_biomarker_discovery.txt
+      echo "Sample type: ${sample_type}" >> ${sample_id}_biomarker_discovery.txt
+      echo "Cancer type: ${cancer_type}" >> ${sample_id}_biomarker_discovery.txt
+      echo "Stage: ${stage}" >> ${sample_id}_biomarker_discovery.txt
+      echo "Processing completed at: \$(date)" >> ${sample_id}_biomarker_discovery.txt
+      
+      # Create Python script for biomarker discovery
+      cat > biomarker_discovery.py << 'EOF'
+  import pandas as pd
+  import numpy as np
+  import random
+  
+  print(f'Starting biomarker discovery for ${sample_id}')
+  
+  # Simulate statistical testing results
+  def simulate_statistical_test(feature_name, sample_type):
+      """Simulate statistical test results"""
+      if sample_type == 'Cancer':
+          # Cancer samples: higher values for most features
+          effect_size = random.uniform(0.3, 0.8)
+          p_value = random.uniform(0.001, 0.05)
+          fdr = p_value * random.uniform(1.0, 2.0)
+      else:
+          # Control samples: lower values
+          effect_size = random.uniform(0.1, 0.4)
+          p_value = random.uniform(0.01, 0.1)
+          fdr = p_value * random.uniform(1.5, 3.0)
+      
+      # Calculate AUC (higher for cancer-discriminative features)
+      if 'TMB' in feature_name or 'immune' in feature_name.lower():
+          auc = random.uniform(0.8, 0.95)
+      elif 'methylation' in feature_name.lower():
+          auc = random.uniform(0.7, 0.9)
+      else:
+          auc = random.uniform(0.6, 0.85)
+      
+      return {
+          'feature': feature_name,
+          'effect_size': effect_size,
+          'p_value': p_value,
+          'fdr': fdr,
+          'auc': auc,
+          'significant': fdr < 0.05,
+          'biologically_relevant': auc > 0.7
+      }
+  
+  # Perform statistical testing on all features
+  statistical_results = []
+  
+  # Define all features
+  all_features = [
+      'methylation_global', 'methylation_immune_enhancers', 
+      'methylation_cancer_drivers', 'methylation_super_enhancers',
+      'fragmentomics_short_ratio', 'fragmentomics_entropy',
+      'fragmentomics_wps_score', 'fragmentomics_end_motif_bias',
+      'expression_ifn_gamma', 'expression_t_cell_exhaustion',
+      'expression_cytotoxic_t_cells', 'expression_b_cells',
+      'variant_tmb', 'variant_total_mutations', 'variant_snv_count',
+      'variant_indel_count', 'variant_cnv_gains', 'variant_cnv_losses'
+  ]
+  
+  for feature in all_features:
+      result = simulate_statistical_test(feature, '${sample_type}')
+      statistical_results.append(result)
+  
+  # Save statistical test results
+  stats_df = pd.DataFrame(statistical_results)
+  stats_df.to_csv('${sample_id}_statistical_tests.tsv', sep='\t', index=False)
+  
+  # Calculate feature importance (SHAP-like values)
+  feature_importance = []
+  for result in statistical_results:
+      importance = result['auc'] * (1 - result['fdr']) * result['effect_size']
+      feature_importance.append({
+          'feature': result['feature'],
+          'importance_score': importance,
+          'auc': result['auc'],
+          'fdr': result['fdr'],
+          'effect_size': result['effect_size'],
+          'rank': 0  # Will be filled later
+      })
+  
+  # Rank features by importance
+  feature_importance_df = pd.DataFrame(feature_importance)
+  feature_importance_df = feature_importance_df.sort_values('importance_score', ascending=False)
+  feature_importance_df['rank'] = range(1, len(feature_importance_df) + 1)
+  feature_importance_df.to_csv('${sample_id}_feature_importance.tsv', sep='\t', index=False)
+  
+  print(f'Biomarker discovery completed for ${sample_id}')
+  print(f'Total features tested: {len(statistical_results)}')
+  print(f'Significant features: {sum(1 for r in statistical_results if r["significant"])}')
+  print(f'High-AUC features: {sum(1 for r in statistical_results if r["auc"] > 0.8)}')
+  EOF
+  
+      # Run Python script
+      python3 biomarker_discovery.py
+      """
 
 Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
-Sep-05 16:01:31.189 [Actor Thread 15] DEBUG nextflow.Session - Session aborted -- Cause: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_001_fragmentomics_test.tsv
-Sep-05 16:01:31.195 [Actor Thread 15] DEBUG nextflow.Session - The following nodes are still active:
-[process] MULTIOMICS_INTEGRATION_TEST
+Sep-05 16:15:20.494 [Actor Thread 15] DEBUG nextflow.Session - Session aborted -- Cause: Process `BIOMARKER_DISCOVERY (ML_TEST_001)` script contains error(s)
+Sep-05 16:15:20.500 [Actor Thread 15] DEBUG nextflow.Session - The following nodes are still active:
+[process] BIOMARKER_DISCOVERY
   status=ACTIVE
   port 0: (queue) closed; channel: -
   port 1: (cntrl) -     ; channel: $
 
-Sep-05 16:01:31.197 [Actor Thread 15] ERROR nextflow.Nextflow - 
+Sep-05 16:15:20.504 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-05 16:15:20.507 [Actor Thread 15] ERROR nextflow.Nextflow - 
     ================================================
-    CENTAUR Multi-Omics Integration Test failed!
+    CENTAUR Biomarker Discovery & ML Training failed!
     ================================================
     
     Error: null
     
-Sep-05 16:01:31.197 [Actor Thread 15] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
-Sep-05 16:01:31.198 [main] DEBUG nextflow.Session - Session await > all processes finished
-Sep-05 16:01:31.198 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Sep-05 16:01:31.198 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Sep-05 16:01:31.198 [main] INFO  nextflow.Nextflow - 
+Sep-05 16:15:20.508 [Actor Thread 15] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
+Sep-05 16:15:20.508 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-05 16:15:20.508 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-05 16:15:20.509 [main] INFO  nextflow.Nextflow - 
     ================================================
-    CENTAUR Multi-Omics Integration Test completed successfully!
+    CENTAUR Biomarker Discovery & ML Training completed successfully!
     ================================================
     
-Sep-05 16:01:31.199 [Actor Thread 13] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=MULTIOMICS_INTEGRATION_TEST; work-dir=null
+Sep-05 16:15:20.510 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY; work-dir=null
   error [java.lang.InterruptedException]: java.lang.InterruptedException
-Sep-05 16:01:31.199 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=MULTIOMICS_INTEGRATION_TEST (2); work-dir=null
-  error [nextflow.exception.ProcessUnrecoverableException]: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_002_fragmentomics_test.tsv
-Sep-05 16:01:31.199 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=MULTIOMICS_INTEGRATION_TEST (3); work-dir=null
-  error [nextflow.exception.ProcessUnrecoverableException]: Process `MULTIOMICS_INTEGRATION_TEST` input file name collision -- There are multiple input files for each of the following file names: TEST_003_fragmentomics_test.tsv
-Sep-05 16:01:31.200 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-Sep-05 16:01:31.407 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Sep-05 16:01:31.416 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Sep-05 16:15:20.510 [Actor Thread 10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (ML_TEST_002); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `BIOMARKER_DISCOVERY (ML_TEST_002)` script contains error(s)
+Sep-05 16:15:20.510 [Actor Thread 8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (ML_TEST_003); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Process `BIOMARKER_DISCOVERY (ML_TEST_003)` script contains error(s)
+Sep-05 16:15:20.512 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-05 16:15:20.718 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-05 16:15:20.726 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

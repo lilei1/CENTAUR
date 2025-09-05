@@ -7,3 +7,6 @@
 2025-09-05 15:51:43	1.7s	small_tesla	OK	dd1ba21d8650eac5553d6c015208af75	6a7a81f4-d337-487a-9c5e-161660bce02a	nextflow run workflows/wes_test_simple.nf
 2025-09-05 16:01:30	1.4s	voluminous_shaw	ERR	0c6d8ad8221a441060a27a0365fbdfa9	393c1aff-0512-46c9-b576-10fe92201fa1	nextflow run workflows/integration_test_simple.nf
 2025-09-05 16:04:19	2s	elegant_pauling	OK	5fce29bf57a359596c5b40ba51bc69dd	adee3a2a-9011-4244-9c0a-d62c167853d5	nextflow run workflows/integration_test_simple.nf
+2025-09-05 16:14:28	1.4s	zen_swanson	ERR	ef0617b6317652c044fb8385b1e34f98	99b67e84-e57c-42d9-9600-27bf1234a280	nextflow run workflows/biomarker_ml_workflow.nf
+2025-09-05 16:15:19	1.7s	distraught_ramanujan	ERR	070e568b13b9ab9fb40f537285363f78	90e24576-2f94-4862-8457-562d5b2fb8a0	nextflow run workflows/biomarker_ml_workflow.nf
+2025-09-05 16:16:02	1.5s	golden_lalande	ERR	05f68dcdd31f468e17838087ebccc221	6e48eaba-55da-4b69-b8bb-a8d2d9be8e71	nextflow run workflows/biomarker_ml_workflow.nf

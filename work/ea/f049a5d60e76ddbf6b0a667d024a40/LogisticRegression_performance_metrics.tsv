@@ -1,0 +1,2 @@
+model_type	auc	precision	recall	f1_score	cv_auc_mean	cv_auc_std	n_features	cross_val_folds
+LogisticRegression	0.711178528130383	0.6806720488010579	0.7461317531249666	0.6911161369436954	0.6637442340596548	0.014440759615943488	15	5

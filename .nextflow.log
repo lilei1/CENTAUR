@@ -1,71 +1,278 @@
-Sep-05 16:04:19.669 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/integration_test_simple.nf
-Sep-05 16:04:19.707 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Sep-05 16:04:19.718 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Sep-05 16:04:19.735 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-05 16:04:19.735 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-05 16:04:19.736 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Sep-05 16:04:19.742 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-05 16:04:19.770 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Sep-05 16:04:19.777 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/integration_test_simple.nf` [elegant_pauling] DSL2 - revision: 5fce29bf57
-Sep-05 16:04:19.778 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-05 16:04:19.778 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-05 16:04:19.802 [main] DEBUG nextflow.Session - Session UUID: adee3a2a-9011-4244-9c0a-d62c167853d5
-Sep-05 16:04:19.802 [main] DEBUG nextflow.Session - Run name: elegant_pauling
-Sep-05 16:04:19.802 [main] DEBUG nextflow.Session - Executor pool size: 16
-Sep-05 16:04:19.806 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-05 16:04:19.811 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 16:04:19.825 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-05 16:16:01.915 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/biomarker_ml_workflow.nf
+Sep-05 16:16:01.961 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 16:16:01.973 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 16:16:01.992 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 16:16:01.993 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 16:16:01.994 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 16:16:01.999 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 16:16:02.030 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 16:16:02.039 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/biomarker_ml_workflow.nf` [golden_lalande] DSL2 - revision: 05f68dcdd3
+Sep-05 16:16:02.040 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 16:16:02.040 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 16:16:02.070 [main] DEBUG nextflow.Session - Session UUID: 6e48eaba-55da-4b69-b8bb-a8d2d9be8e71
+Sep-05 16:16:02.071 [main] DEBUG nextflow.Session - Run name: golden_lalande
+Sep-05 16:16:02.071 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 16:16:02.075 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 16:16:02.078 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 16:16:02.094 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (04:27 PDT)
   System: Mac OS X 15.6.1
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
   Encoding: UTF-8 (UTF-8)
-  Process: 24010@LiLei-M36.local [127.0.0.1]
-  CPUs: 16 - Mem: 48 GB (444.1 MB) - Swap: 0 (0)
-Sep-05 16:04:19.832 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
-Sep-05 16:04:19.832 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
-Sep-05 16:04:19.839 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-05 16:04:19.844 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Sep-05 16:04:19.846 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-05 16:04:19.858 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-05 16:04:19.862 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Sep-05 16:04:19.893 [main] DEBUG nextflow.Session - Session start
-Sep-05 16:04:20.221 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Sep-05 16:04:20.226 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
-Sep-05 16:04:20.229 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1142d377] - activable => nextflow.secret.LocalSecretsProvider@1142d377
-Sep-05 16:04:20.296 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Sep-05 16:04:20.296 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-05 16:04:20.300 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Sep-05 16:04:20.303 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
-Sep-05 16:04:20.305 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Sep-05 16:04:20.321 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MULTIOMICS_INTEGRATION_TEST': maxForks=0; fair=false; array=0
-Sep-05 16:04:20.353 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: MULTIOMICS_INTEGRATION_TEST
-Sep-05 16:04:20.354 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Sep-05 16:04:20.354 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIOMICS_INTEGRATION_TEST
-Sep-05 16:04:20.354 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_cfec865893d70b10: /Users/lilei/Downloads/CENTAUR/workflows/integration_test_simple.nf
-Sep-05 16:04:20.354 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Sep-05 16:04:20.354 [main] DEBUG nextflow.Session - Session await
-Sep-05 16:04:20.425 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 16:04:20.426 [Task submitter] INFO  nextflow.Session - [96/90bfb1] Submitted process > MULTIOMICS_INTEGRATION_TEST (INTEGRATION_TEST_001)
-Sep-05 16:04:20.431 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 16:04:20.431 [Task submitter] INFO  nextflow.Session - [c0/2995c6] Submitted process > MULTIOMICS_INTEGRATION_TEST (INTEGRATION_TEST_002)
-Sep-05 16:04:20.434 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 16:04:20.434 [Task submitter] INFO  nextflow.Session - [fd/f50d4c] Submitted process > MULTIOMICS_INTEGRATION_TEST (INTEGRATION_TEST_003)
-Sep-05 16:04:20.812 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: MULTIOMICS_INTEGRATION_TEST (INTEGRATION_TEST_003); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/fd/f50d4cc20dc1016d0b53e9844f88bb]
-Sep-05 16:04:20.813 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 16:04:20.816 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: MULTIOMICS_INTEGRATION_TEST (INTEGRATION_TEST_001); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/96/90bfb1b26ec4db019277eaa8cc5b51]
-Sep-05 16:04:20.817 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: MULTIOMICS_INTEGRATION_TEST (INTEGRATION_TEST_002); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/c0/2995c6a1bf524732cc856d55462441]
-Sep-05 16:04:20.830 [main] DEBUG nextflow.Session - Session await > all processes finished
-Sep-05 16:04:20.922 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Sep-05 16:04:20.922 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Sep-05 16:04:20.923 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Sep-05 16:04:20.926 [main] INFO  nextflow.Nextflow - 
+  Process: 28543@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (2.7 GB) - Swap: 0 (0)
+Sep-05 16:16:02.101 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 16:16:02.102 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 16:16:02.110 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 16:16:02.115 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 16:16:02.117 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 16:16:02.129 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 16:16:02.134 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 16:16:02.165 [main] DEBUG nextflow.Session - Session start
+Sep-05 16:16:02.537 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 16:16:02.541 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 16:16:02.545 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@48bc2fce] - activable => nextflow.secret.LocalSecretsProvider@48bc2fce
+Sep-05 16:16:02.612 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 16:16:02.612 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 16:16:02.616 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-05 16:16:02.619 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-05 16:16:02.620 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-05 16:16:02.636 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'BIOMARKER_DISCOVERY': maxForks=0; fair=false; array=0
+Sep-05 16:16:02.663 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 16:16:02.663 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 16:16:02.663 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ML_TRAINING': maxForks=0; fair=false; array=0
+Sep-05 16:16:02.679 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BIOMARKER_DISCOVERY, ML_TRAINING
+Sep-05 16:16:02.680 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Sep-05 16:16:02.680 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BIOMARKER_DISCOVERY
+Sep-05 16:16:02.680 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ML_TRAINING
+Sep-05 16:16:02.681 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_2fd408be5e1e083d: /Users/lilei/Downloads/CENTAUR/workflows/biomarker_ml_workflow.nf
+Sep-05 16:16:02.681 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-05 16:16:02.681 [main] DEBUG nextflow.Session - Session await
+Sep-05 16:16:02.766 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 16:16:02.768 [Task submitter] INFO  nextflow.Session - [4e/7299c0] Submitted process > ML_TRAINING (NaiveBayes)
+Sep-05 16:16:02.775 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 16:16:02.775 [Task submitter] INFO  nextflow.Session - [fa/161fd6] Submitted process > ML_TRAINING (RandomForest)
+Sep-05 16:16:02.779 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 16:16:02.780 [Task submitter] INFO  nextflow.Session - [9e/ce97fc] Submitted process > BIOMARKER_DISCOVERY (ML_TEST_002)
+Sep-05 16:16:02.782 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 16:16:02.782 [Task submitter] INFO  nextflow.Session - [86/4bd771] Submitted process > ML_TRAINING (XGBoost)
+Sep-05 16:16:02.889 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 16:16:02.890 [Task submitter] INFO  nextflow.Session - [a7/38caff] Submitted process > BIOMARKER_DISCOVERY (ML_TEST_001)
+Sep-05 16:16:02.892 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 16:16:02.893 [Task submitter] INFO  nextflow.Session - [ea/f049a5] Submitted process > ML_TRAINING (LogisticRegression)
+Sep-05 16:16:02.895 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 16:16:02.895 [Task submitter] INFO  nextflow.Session - [c4/88070c] Submitted process > BIOMARKER_DISCOVERY (ML_TEST_003)
+Sep-05 16:16:03.269 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: ML_TRAINING (RandomForest); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/fa/161fd6c3d454136bf6429deb993213]
+Sep-05 16:16:03.269 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 16:16:03.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: BIOMARKER_DISCOVERY (ML_TEST_002); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/9e/ce97fc67d5d2dd171670acf5a38d2f]
+Sep-05 16:16:03.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: ML_TRAINING (XGBoost); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/86/4bd771c68107388600abedbd3d9ffb]
+Sep-05 16:16:03.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: BIOMARKER_DISCOVERY (ML_TEST_001); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/a7/38caff8541ea8571fc98d9f00016bb]
+Sep-05 16:16:03.272 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: ML_TRAINING (LogisticRegression); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/ea/f049a5d60e76ddbf6b0a667d024a40]
+Sep-05 16:16:03.272 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: BIOMARKER_DISCOVERY (ML_TEST_003); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/c4/88070c829f845801a1924071e45af8]
+Sep-05 16:16:03.273 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (ML_TEST_002); work-dir=/Users/lilei/Downloads/CENTAUR/work/9e/ce97fc67d5d2dd171670acf5a38d2f
+  error [nextflow.exception.ProcessFailedException]: Process `BIOMARKER_DISCOVERY (ML_TEST_002)` terminated with an error exit status (1)
+Sep-05 16:16:03.273 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (LogisticRegression); work-dir=/Users/lilei/Downloads/CENTAUR/work/ea/f049a5d60e76ddbf6b0a667d024a40
+  error [nextflow.exception.ProcessFailedException]: Process `ML_TRAINING (LogisticRegression)` terminated with an error exit status (1)
+Sep-05 16:16:03.275 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (ML_TEST_003); work-dir=/Users/lilei/Downloads/CENTAUR/work/c4/88070c829f845801a1924071e45af8
+  error [nextflow.exception.ProcessFailedException]: Process `BIOMARKER_DISCOVERY (ML_TEST_003)` terminated with an error exit status (1)
+Sep-05 16:16:03.276 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (ML_TEST_001); work-dir=/Users/lilei/Downloads/CENTAUR/work/a7/38caff8541ea8571fc98d9f00016bb
+  error [nextflow.exception.ProcessFailedException]: Process `BIOMARKER_DISCOVERY (ML_TEST_001)` terminated with an error exit status (1)
+Sep-05 16:16:03.282 [TaskFinalizer-5] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ML_TRAINING (LogisticRegression)'
+
+Caused by:
+  Process `ML_TRAINING (LogisticRegression)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  echo "Training LogisticRegression model" > LogisticRegression_model_results.txt
+      echo "Training completed at: $(date)" >> LogisticRegression_model_results.txt
+      
+      # Create Python script for ML training
+      python3 -c "
+  import pandas as pd
+  import numpy as np
+  import random
+  
+  print(f'Training LogisticRegression model')
+  
+  # Simulate ML training results
+  def simulate_ml_training(model_type, n_features):
+      if model_type == 'XGBoost':
+          auc = random.uniform(0.85, 0.95)
+          precision = random.uniform(0.80, 0.90)
+          recall = random.uniform(0.75, 0.85)
+          f1 = random.uniform(0.78, 0.88)
+      elif model_type == 'RandomForest':
+          auc = random.uniform(0.80, 0.90)
+          precision = random.uniform(0.75, 0.85)
+          recall = random.uniform(0.70, 0.80)
+          f1 = random.uniform(0.72, 0.82)
+      elif model_type == 'LogisticRegression':
+          auc = random.uniform(0.70, 0.85)
+          precision = random.uniform(0.65, 0.80)
+          recall = random.uniform(0.60, 0.75)
+          f1 = random.uniform(0.62, 0.77)
+      else:  # NaiveBayes
+          auc = random.uniform(0.65, 0.80)
+          precision = random.uniform(0.60, 0.75)
+          recall = random.uniform(0.55, 0.70)
+          f1 = random.uniform(0.57, 0.72)
+      
+      return {
+          'model_type': model_type,
+          'auc': auc,
+          'precision': precision,
+          'recall': recall,
+          'f1_score': f1,
+          'cv_auc_mean': auc - random.uniform(0.02, 0.05),
+          'cv_auc_std': random.uniform(0.01, 0.03),
+          'n_features': n_features,
+          'cross_val_folds': 5
+      }
+  
+  # Simulate feature importance
+  def simulate_feature_importance(model_type, n_features):
+      features = [
+          'methylation_enhancer_CRXIP', 'methylation_SNP_upstream_PRK',
+          'methylation_SNP_near_MYC', 'methylation_hypo_TMB_RNF',
+          'methylation_hyper_TMB_PDL1', 'methylation_global_hypo_CpG',
+          'fragmentomics_short_TFBS', 'fragmentomics_entropy',
+          'fragmentomics_WPS_STAT1', 'fragmentomics_end_motif_CTCF',
+          'variant_KRAS_mutation', 'variant_TMB', 'variant_DNA_burden',
+          'expression_immune_activation', 'expression_t_cell_exhaustion'
+      ]
+      
+      importance_scores = []
+      for i, feature in enumerate(features[:n_features]):
+          if model_type == 'XGBoost':
+              importance = random.uniform(0.05, 0.15)
+          elif model_type == 'RandomForest':
+              importance = random.uniform(0.03, 0.12)
+          else:
+              importance = random.uniform(0.01, 0.08)
+          
+          importance_scores.append({
+              'feature': feature,
+              'importance_score': importance,
+              'rank': i + 1,
+              'model_type': model_type
+          })
+      
+      return importance_scores
+  
+  # Simulate predictions
+  def simulate_predictions(model_type, n_samples):
+      predictions = []
+      for i in range(n_samples):
+          if model_type == 'XGBoost':
+              prob_cancer = random.uniform(0.7, 0.95)
+          elif model_type == 'RandomForest':
+              prob_cancer = random.uniform(0.6, 0.90)
+          else:
+              prob_cancer = random.uniform(0.5, 0.85)
+          
+          predictions.append({
+              'sample_id': f'SAMPLE_{i+1:03d}',
+              'predicted_class': 'Cancer' if prob_cancer > 0.5 else 'Control',
+              'probability_cancer': prob_cancer,
+              'probability_control': 1 - prob_cancer,
+              'model_type': model_type
+          })
+      
+      return predictions
+  
+  # Generate results
+  n_features = 15
+  n_samples = 100
+  
+  # Performance metrics
+  performance = simulate_ml_training('LogisticRegression', n_features)
+  performance_df = pd.DataFrame([performance])
+  performance_df.to_csv('LogisticRegression_performance_metrics.tsv', sep='	', index=False)
+  
+  # Feature importance
+  feature_importance = simulate_feature_importance('LogisticRegression', n_features)
+  feature_importance_df = pd.DataFrame(feature_importance)
+  feature_importance_df.to_csv('LogisticRegression_feature_importance.tsv', sep='	', index=False)
+  
+  # Predictions
+  predictions = simulate_predictions('LogisticRegression', n_samples)
+  predictions_df = pd.DataFrame(predictions)
+  predictions_df.to_csv('LogisticRegression_predictions.tsv', sep='	', index=False)
+  
+  print(f'LogisticRegression model training completed')
+  print(f'AUC: {performance["auc"]:.3f}')
+  print(f'Precision: {performance["precision"]:.3f}')
+  print(f'Recall: {performance["recall"]:.3f}')
+  print(f'F1-Score: {performance["f1_score"]:.3f}')
+  "
+
+Command exit status:
+  1
+
+Command output:
+  Training LogisticRegression model
+  LogisticRegression model training completed
+
+Command error:
+  Traceback (most recent call last):
+    File "<string>", line 114, in <module>
+  NameError: name 'auc' is not defined
+  Training LogisticRegression model
+  LogisticRegression model training completed
+
+Work dir:
+  /Users/lilei/Downloads/CENTAUR/work/ea/f049a5d60e76ddbf6b0a667d024a40
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Sep-05 16:16:03.284 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (RandomForest); work-dir=/Users/lilei/Downloads/CENTAUR/work/fa/161fd6c3d454136bf6429deb993213
+  error [nextflow.exception.ProcessFailedException]: Process `ML_TRAINING (RandomForest)` terminated with an error exit status (1)
+Sep-05 16:16:03.284 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (XGBoost); work-dir=/Users/lilei/Downloads/CENTAUR/work/86/4bd771c68107388600abedbd3d9ffb
+  error [nextflow.exception.ProcessFailedException]: Process `ML_TRAINING (XGBoost)` terminated with an error exit status (1)
+Sep-05 16:16:03.284 [TaskFinalizer-5] DEBUG nextflow.Session - Session aborted -- Cause: Process `ML_TRAINING (LogisticRegression)` terminated with an error exit status (1)
+Sep-05 16:16:03.290 [TaskFinalizer-5] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] collect
+  [operator] collect
+  [operator] collect
+  [operator] collect
+  [operator] map
+  [operator] view
+  [operator] map
+  [operator] view
+
+Sep-05 16:16:03.294 [TaskFinalizer-5] ERROR nextflow.Nextflow - 
     ================================================
-    CENTAUR Multi-Omics Integration Test completed successfully!
+    CENTAUR Biomarker Discovery & ML Training failed!
     ================================================
     
-Sep-05 16:04:20.927 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=863ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
-Sep-05 16:04:20.972 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Sep-05 16:04:20.984 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Sep-05 16:04:20.984 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+    Error: Traceback (most recent call last):
+  File "<string>", line 114, in <module>
+NameError: name 'auc' is not defined
+Training LogisticRegression model
+LogisticRegression model training completed
+    
+Sep-05 16:16:03.295 [TaskFinalizer-5] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
+Sep-05 16:16:03.295 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-05 16:16:03.295 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-05 16:16:03.295 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-05 16:16:03.296 [main] INFO  nextflow.Nextflow - 
+    ================================================
+    CENTAUR Biomarker Discovery & ML Training completed successfully!
+    ================================================
+    
+Sep-05 16:16:03.298 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
+Sep-05 16:16:03.307 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill ML_TRAINING (NaiveBayes) -- command: kill -TERM 28576; exit: 1 
+ bash: line 0: kill: (28576) - No such process
+
+Sep-05 16:16:03.310 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=6; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=0ms; failedDuration=2.3s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=7; peakCpus=7; peakMemory=0; ]
+Sep-05 16:16:03.505 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-05 16:16:03.512 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

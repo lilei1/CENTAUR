@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 114, in <module>
+NameError: name 'auc' is not defined
+Training XGBoost model
+XGBoost model training completed

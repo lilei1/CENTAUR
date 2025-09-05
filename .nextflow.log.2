@@ -1,77 +1,115 @@
-Sep-05 15:51:43.134 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/wes_test_simple.nf
-Sep-05 15:51:43.190 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Sep-05 15:51:43.204 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Sep-05 15:51:43.222 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-05 15:51:43.222 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-05 15:51:43.223 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Sep-05 15:51:43.229 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-05 15:51:43.260 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Sep-05 15:51:43.268 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/wes_test_simple.nf` [small_tesla] DSL2 - revision: dd1ba21d86
-Sep-05 15:51:43.268 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-05 15:51:43.268 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-05 15:51:43.293 [main] DEBUG nextflow.Session - Session UUID: 6a7a81f4-d337-487a-9c5e-161660bce02a
-Sep-05 15:51:43.293 [main] DEBUG nextflow.Session - Run name: small_tesla
-Sep-05 15:51:43.293 [main] DEBUG nextflow.Session - Executor pool size: 16
-Sep-05 15:51:43.296 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-05 15:51:43.299 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:51:43.312 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-05 16:14:28.252 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/biomarker_ml_workflow.nf
+Sep-05 16:14:28.293 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 16:14:28.306 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 16:14:28.325 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 16:14:28.325 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 16:14:28.326 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 16:14:28.332 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 16:14:28.362 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 16:14:28.371 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/biomarker_ml_workflow.nf` [zen_swanson] DSL2 - revision: ef0617b631
+Sep-05 16:14:28.372 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 16:14:28.372 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 16:14:28.401 [main] DEBUG nextflow.Session - Session UUID: 99b67e84-e57c-42d9-9600-27bf1234a280
+Sep-05 16:14:28.405 [main] DEBUG nextflow.Session - Run name: zen_swanson
+Sep-05 16:14:28.405 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 16:14:28.410 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 16:14:28.413 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 16:14:28.431 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (04:27 PDT)
   System: Mac OS X 15.6.1
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
   Encoding: UTF-8 (UTF-8)
-  Process: 22024@LiLei-M36.local [127.0.0.1]
-  CPUs: 16 - Mem: 48 GB (1.3 GB) - Swap: 0 (0)
-Sep-05 15:51:43.319 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
-Sep-05 15:51:43.319 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
-Sep-05 15:51:43.326 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-05 15:51:43.330 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Sep-05 15:51:43.333 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-05 15:51:43.344 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-05 15:51:43.348 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Sep-05 15:51:43.378 [main] DEBUG nextflow.Session - Session start
-Sep-05 15:51:43.755 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Sep-05 15:51:43.761 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
-Sep-05 15:51:43.765 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@61037caf] - activable => nextflow.secret.LocalSecretsProvider@61037caf
-Sep-05 15:51:43.834 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Sep-05 15:51:43.835 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-05 15:51:43.837 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Sep-05 15:51:43.841 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
-Sep-05 15:51:43.842 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Sep-05 15:51:43.857 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'WES_TEST': maxForks=0; fair=false; array=0
-Sep-05 15:51:43.892 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: WES_TEST
-Sep-05 15:51:43.893 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Sep-05 15:51:43.893 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > WES_TEST
-Sep-05 15:51:43.893 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_b23abfb322799065: /Users/lilei/Downloads/CENTAUR/workflows/wes_test_simple.nf
-Sep-05 15:51:43.893 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Sep-05 15:51:43.893 [main] DEBUG nextflow.Session - Session await
-Sep-05 15:51:43.947 [Actor Thread 15] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_tumor_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_tumor_R1.fastq.gz
-Sep-05 15:51:43.947 [Actor Thread 16] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_tumor_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_tumor_R1.fastq.gz
-Sep-05 15:51:43.947 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_tumor_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_tumor_R1.fastq.gz
-Sep-05 15:51:43.947 [Actor Thread 15] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_normal_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_normal_R1.fastq.gz
-Sep-05 15:51:43.947 [Actor Thread 16] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_normal_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_normal_R1.fastq.gz
-Sep-05 15:51:43.947 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_normal_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_normal_R1.fastq.gz
-Sep-05 15:51:43.981 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:51:43.983 [Task submitter] INFO  nextflow.Session - [50/416d4c] Submitted process > WES_TEST (WES_TEST_003)
-Sep-05 15:51:43.988 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:51:43.988 [Task submitter] INFO  nextflow.Session - [ca/e00b89] Submitted process > WES_TEST (WES_TEST_001)
-Sep-05 15:51:43.992 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:51:43.993 [Task submitter] INFO  nextflow.Session - [d2/7eed18] Submitted process > WES_TEST (WES_TEST_002)
-Sep-05 15:51:44.396 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: WES_TEST (WES_TEST_002); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/d2/7eed18424b0008a393c8c8fce2fee6]
-Sep-05 15:51:44.396 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:51:44.397 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: WES_TEST (WES_TEST_003); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/50/416d4cb054514b0e33744d50e56da4]
-Sep-05 15:51:44.399 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: WES_TEST (WES_TEST_001); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/ca/e00b894ef99549dabdf16a88bf16c0]
-Sep-05 15:51:44.408 [main] DEBUG nextflow.Session - Session await > all processes finished
-Sep-05 15:51:44.500 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Sep-05 15:51:44.500 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Sep-05 15:51:44.501 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Sep-05 15:51:44.502 [main] INFO  nextflow.Nextflow - 
+  Process: 28240@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (75.5 MB) - Swap: 0 (0)
+Sep-05 16:14:28.439 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 16:14:28.439 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 16:14:28.449 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 16:14:28.454 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 16:14:28.456 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 16:14:28.471 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 16:14:28.477 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 16:14:28.509 [main] DEBUG nextflow.Session - Session start
+Sep-05 16:14:28.962 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 16:14:28.969 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 16:14:28.972 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@283ab206] - activable => nextflow.secret.LocalSecretsProvider@283ab206
+Sep-05 16:14:29.033 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 16:14:29.034 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 16:14:29.036 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-05 16:14:29.040 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-05 16:14:29.041 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-05 16:14:29.055 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'BIOMARKER_DISCOVERY': maxForks=0; fair=false; array=0
+Sep-05 16:14:29.086 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 16:14:29.086 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 16:14:29.087 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ML_TRAINING': maxForks=0; fair=false; array=0
+Sep-05 16:14:29.097 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BIOMARKER_DISCOVERY, ML_TRAINING
+Sep-05 16:14:29.097 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Sep-05 16:14:29.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BIOMARKER_DISCOVERY
+Sep-05 16:14:29.098 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ML_TRAINING
+Sep-05 16:14:29.098 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_0251b17947471710: /Users/lilei/Downloads/CENTAUR/workflows/biomarker_ml_workflow.nf
+Sep-05 16:14:29.098 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-05 16:14:29.098 [main] DEBUG nextflow.Session - Session await
+Sep-05 16:14:29.118 [Actor Thread 10] WARN  nextflow.processor.TaskProcessor - Input tuple does not match tuple declaration in process `BIOMARKER_DISCOVERY` -- offending value: [ML_TEST_003, Lung, Late, Cancer]
+Sep-05 16:14:29.118 [Actor Thread 12] WARN  nextflow.processor.TaskProcessor - Input tuple does not match tuple declaration in process `ML_TRAINING` -- offending value: [RandomForest, dummy, CRC, Early, Cancer, dummy_feature_matrix.tsv]
+Sep-05 16:14:29.129 [Actor Thread 9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (4); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'Cancer'
+Sep-05 16:14:29.129 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (1); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Path value cannot be null
+Sep-05 16:14:29.132 [Actor Thread 13] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (2); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Path value cannot be null
+Sep-05 16:14:29.133 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Sep-05 16:14:29.133 [Actor Thread 10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BIOMARKER_DISCOVERY (3); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Path value cannot be null
+Sep-05 16:14:29.138 [Actor Thread 9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ML_TRAINING (4)'
+
+Caused by:
+  Not a valid path value: 'Cancer'
+
+
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Sep-05 16:14:29.207 [Actor Thread 9] DEBUG nextflow.Session - Session aborted -- Cause: Not a valid path value: 'Cancer'
+Sep-05 16:14:29.214 [Actor Thread 9] DEBUG nextflow.Session - The following nodes are still active:
+[process] ML_TRAINING
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Sep-05 16:14:29.218 [Actor Thread 9] ERROR nextflow.Nextflow - 
     ================================================
-    CENTAUR WES Test completed successfully!
+    CENTAUR Biomarker Discovery & ML Training failed!
     ================================================
     
-Sep-05 15:51:44.505 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
-Sep-05 15:51:44.680 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Sep-05 15:51:44.686 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Sep-05 15:51:44.687 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+    Error: null
+    
+Sep-05 16:14:29.218 [Actor Thread 9] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
+Sep-05 16:14:29.218 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-05 16:14:29.219 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-05 16:14:29.219 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-05 16:14:29.219 [main] INFO  nextflow.Nextflow - 
+    ================================================
+    CENTAUR Biomarker Discovery & ML Training completed successfully!
+    ================================================
+    
+Sep-05 16:14:29.219 [Actor Thread 14] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Sep-05 16:14:29.220 [Actor Thread 11] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (3); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'Cancer'
+Sep-05 16:14:29.220 [Actor Thread 12] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (2); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'Cancer'
+Sep-05 16:14:29.220 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=ML_TRAINING (1); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'Cancer'
+Sep-05 16:14:29.221 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-05 16:14:29.428 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-05 16:14:29.437 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

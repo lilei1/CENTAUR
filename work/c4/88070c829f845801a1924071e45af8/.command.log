@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 79, in <module>
+Starting biomarker discovery for ML_TEST_003
+Biomarker discovery completed for ML_TEST_003
+Total features tested: 18
+  File "<string>", line 79, in <genexpr>
+NameError: name 'significant' is not defined
