@@ -3,3 +3,5 @@
 2025-09-05 15:28:33	863ms	friendly_banach	ERR	a778ec4d2b7526241bfd23ba693325c4	5a94f049-2710-49a0-a3d9-3c6c8a998cf6	nextflow run workflows/methylation_test_simple.nf
 2025-09-05 15:29:02	3s	ecstatic_euler	ERR	69074b4ba0d19a84a6fc2554f567a731	23af6c95-66e2-4599-b4a5-b2e6b0bc7bd7	nextflow run workflows/methylation_test_simple.nf
 2025-09-05 15:36:04	1.6s	dreamy_kowalevski	OK	bf60c672e8db4418b88c51bd6bfb4f78	1536231d-86a1-42ff-ae2d-b9b8f601ed36	nextflow run workflows/rnaseq_test_simple.nf
+2025-09-05 15:48:14	1.6s	chaotic_mendel	ERR	e1c3524c4fd555c3d4de3989c2f0e0ae	d97584f4-c300-4417-86bd-d2c788b1b97c	nextflow run workflows/wes_test_simple.nf
+2025-09-05 15:51:43	1.7s	small_tesla	OK	dd1ba21d8650eac5553d6c015208af75	6a7a81f4-d337-487a-9c5e-161660bce02a	nextflow run workflows/wes_test_simple.nf

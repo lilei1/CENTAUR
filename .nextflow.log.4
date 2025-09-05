@@ -1,104 +1,94 @@
-Sep-05 15:27:21.125 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/methylation_test.nf
-Sep-05 15:27:21.157 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Sep-05 15:27:21.314 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Sep-05 15:27:21.333 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-05 15:27:21.333 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-05 15:27:21.334 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Sep-05 15:27:21.341 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-05 15:27:21.371 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Sep-05 15:27:21.380 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/methylation_test.nf` [astonishing_pike] DSL2 - revision: 97e9d8dfbc
-Sep-05 15:27:21.381 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-05 15:27:21.381 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-05 15:27:21.409 [main] DEBUG nextflow.Session - Session UUID: f5819693-4764-4ed0-bbbd-29c732f258af
-Sep-05 15:27:21.410 [main] DEBUG nextflow.Session - Run name: astonishing_pike
-Sep-05 15:27:21.410 [main] DEBUG nextflow.Session - Executor pool size: 16
-Sep-05 15:27:21.414 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-05 15:27:21.417 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:27:21.471 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-05 15:28:32.961 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/methylation_test_simple.nf
+Sep-05 15:28:32.996 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 15:28:33.006 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 15:28:33.022 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 15:28:33.023 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 15:28:33.024 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 15:28:33.029 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 15:28:33.056 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 15:28:33.063 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/methylation_test_simple.nf` [friendly_banach] DSL2 - revision: a778ec4d2b
+Sep-05 15:28:33.064 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 15:28:33.064 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 15:28:33.088 [main] DEBUG nextflow.Session - Session UUID: 5a94f049-2710-49a0-a3d9-3c6c8a998cf6
+Sep-05 15:28:33.088 [main] DEBUG nextflow.Session - Run name: friendly_banach
+Sep-05 15:28:33.088 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 15:28:33.092 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 15:28:33.094 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 15:28:33.108 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (04:27 PDT)
   System: Mac OS X 15.6.1
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
   Encoding: UTF-8 (UTF-8)
-  Process: 17370@LiLei-M36.local [127.0.0.1]
-  CPUs: 16 - Mem: 48 GB (183.2 MB) - Swap: 0 (0)
-Sep-05 15:27:21.484 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
-Sep-05 15:27:21.485 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
-Sep-05 15:27:21.495 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-05 15:27:21.500 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Sep-05 15:27:21.502 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-05 15:27:21.513 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-05 15:27:21.518 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Sep-05 15:27:21.548 [main] DEBUG nextflow.Session - Session start
-Sep-05 15:27:21.646 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-Sep-05 15:27:21.650 [main] ERROR nextflow.cli.Launcher - Script compilation error
-- file : /Users/lilei/Downloads/CENTAUR/workflows/methylation_test.nf
-- cause: token recognition error at: '(' @ line 36, column 37.
-       echo "Processing completed at: $(date)" >> ${sample_id}_methylation_test.txt
-                                       ^
+  Process: 17744@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (194.9 MB) - Swap: 0 (0)
+Sep-05 15:28:33.115 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 15:28:33.115 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 15:28:33.122 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 15:28:33.125 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 15:28:33.127 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 15:28:33.138 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 15:28:33.142 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 15:28:33.172 [main] DEBUG nextflow.Session - Session start
+Sep-05 15:28:33.485 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 15:28:33.490 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 15:28:33.493 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2e590b] - activable => nextflow.secret.LocalSecretsProvider@2e590b
+Sep-05 15:28:33.557 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 15:28:33.558 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 15:28:33.560 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-05 15:28:33.565 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-05 15:28:33.566 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-05 15:28:33.580 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'METHYLATION_TEST': maxForks=0; fair=false; array=0
+Sep-05 15:28:33.607 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: METHYLATION_TEST
+Sep-05 15:28:33.608 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Sep-05 15:28:33.608 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > METHYLATION_TEST
+Sep-05 15:28:33.609 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_af26940c0161d56c: /Users/lilei/Downloads/CENTAUR/workflows/methylation_test_simple.nf
+Sep-05 15:28:33.609 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-05 15:28:33.609 [main] DEBUG nextflow.Session - Session await
+Sep-05 15:28:33.634 [Actor Thread 9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=METHYLATION_TEST (1); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'data/test_data/methylation/TEST_001/TEST_001_R1.fastq.gz'
+Sep-05 15:28:33.640 [Actor Thread 9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'METHYLATION_TEST (1)'
 
-1 error
+Caused by:
+  Not a valid path value: 'data/test_data/methylation/TEST_001/TEST_001_R1.fastq.gz'
 
-nextflow.exception.ScriptCompilationException: Script compilation error
-- file : /Users/lilei/Downloads/CENTAUR/workflows/methylation_test.nf
-- cause: token recognition error at: '(' @ line 36, column 37.
-       echo "Processing completed at: $(date)" >> ${sample_id}_methylation_test.txt
-                                       ^
 
-1 error
 
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse0(ScriptLoaderV1.groovy:204)
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse(ScriptLoaderV1.groovy:215)
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse(ScriptLoaderV1.groovy)
-	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:232)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:137)
-	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
-	at nextflow.cli.Launcher.run(Launcher.groovy:513)
-	at nextflow.cli.Launcher.main(Launcher.groovy:673)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-Script_9217b4ac4fa5a3a2: 36: token recognition error at: '(' @ line 36, column 37.
-       echo "Processing completed at: $(date)" >> ${sample_id}_methylation_test.txt
-                                       ^
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Sep-05 15:28:33.641 [Actor Thread 9] DEBUG nextflow.Session - Session aborted -- Cause: Not a valid path value: 'data/test_data/methylation/TEST_001/TEST_001_R1.fastq.gz'
+Sep-05 15:28:33.647 [Actor Thread 9] DEBUG nextflow.Session - The following nodes are still active:
+[process] METHYLATION_TEST
+  status=ACTIVE
+  port 0: (queue) closed; channel: -
+  port 1: (cntrl) -     ; channel: $
 
-1 error
-
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:148)
-	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4730)
-	at org.apache.groovy.parser.antlr4.AstBuilder.access$100(AstBuilder.java:169)
-	at org.apache.groovy.parser.antlr4.AstBuilder$3.syntaxError(AstBuilder.java:4741)
-	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
-	at groovyjarjarantlr4.v4.runtime.Lexer.notifyListeners(Lexer.java:381)
-	at groovyjarjarantlr4.v4.runtime.Lexer.nextToken(Lexer.java:145)
-	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.fetch(BufferedTokenStream.java:170)
-	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.sync(BufferedTokenStream.java:153)
-	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.consume(BufferedTokenStream.java:137)
-	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.execDFA(ParserATNSimulator.java:559)
-	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:408)
-	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:356)
-	at org.apache.groovy.parser.antlr4.GroovyParser.commandExpression(GroovyParser.java:9702)
-	at org.apache.groovy.parser.antlr4.GroovyParser.statementExpression(GroovyParser.java:8233)
-	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:7078)
-	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:517)
-	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:427)
-	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:363)
-	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:243)
-	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:221)
-	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:262)
-	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
-	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:256)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:663)
-	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:365)
-	at groovy.lang.GroovyClassLoader.lambda$parseClass$2(GroovyClassLoader.java:314)
-	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
-	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314)
-	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:572)
-	at groovy.lang.GroovyShell.parse(GroovyShell.java:585)
-	at groovy.lang.GroovyShell.parse(GroovyShell.java:639)
-	at groovy.lang.GroovyShell.parse(GroovyShell.java:643)
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse0(ScriptLoaderV1.groovy:183)
-	... 7 common frames omitted
+Sep-05 15:28:33.651 [Actor Thread 9] ERROR nextflow.Nextflow - 
+    ================================================
+    CENTAUR Methylation Test failed!
+    ================================================
+    
+    Error: null
+    
+Sep-05 15:28:33.651 [Actor Thread 9] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
+Sep-05 15:28:33.651 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-05 15:28:33.651 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-05 15:28:33.651 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-05 15:28:33.652 [main] INFO  nextflow.Nextflow - 
+    ================================================
+    CENTAUR Methylation Test completed successfully!
+    ================================================
+    
+Sep-05 15:28:33.652 [Actor Thread 7] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=METHYLATION_TEST; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Sep-05 15:28:33.653 [Actor Thread 13] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=METHYLATION_TEST (3); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'data/test_data/methylation/TEST_003/TEST_003_R1.fastq.gz'
+Sep-05 15:28:33.653 [Actor Thread 11] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=METHYLATION_TEST (2); work-dir=null
+  error [nextflow.exception.ProcessUnrecoverableException]: Not a valid path value: 'data/test_data/methylation/TEST_002/TEST_002_R1.fastq.gz'
+Sep-05 15:28:33.654 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-05 15:28:33.859 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-05 15:28:33.866 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,7 @@
+Processing WES data for WES_TEST_001
+Sample type: Cancer
+Cancer type: CRC
+Stage: Early
+Tumor file: WES_TEST_001_tumor_R1.fastq.gz
+Normal file: WES_TEST_001_normal_R1.fastq.gz
+Processing completed at: Fri Sep  5 15:51:44 PDT 2025

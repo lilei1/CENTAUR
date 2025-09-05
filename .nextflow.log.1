@@ -1,117 +1,237 @@
-Sep-05 15:29:02.782 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/methylation_test_simple.nf
-Sep-05 15:29:02.818 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Sep-05 15:29:02.829 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Sep-05 15:29:02.845 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-05 15:29:02.846 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-05 15:29:02.847 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Sep-05 15:29:02.852 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-05 15:29:02.880 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Sep-05 15:29:02.886 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/methylation_test_simple.nf` [ecstatic_euler] DSL2 - revision: 69074b4ba0
-Sep-05 15:29:02.887 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-05 15:29:02.887 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-05 15:29:02.912 [main] DEBUG nextflow.Session - Session UUID: 23af6c95-66e2-4599-b4a5-b2e6b0bc7bd7
-Sep-05 15:29:02.912 [main] DEBUG nextflow.Session - Run name: ecstatic_euler
-Sep-05 15:29:02.912 [main] DEBUG nextflow.Session - Executor pool size: 16
-Sep-05 15:29:02.915 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-05 15:29:02.917 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:29:02.931 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-05 15:48:14.393 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/wes_test_simple.nf
+Sep-05 15:48:14.439 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 15:48:14.451 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 15:48:14.470 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 15:48:14.471 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 15:48:14.472 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 15:48:14.478 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 15:48:14.509 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 15:48:14.519 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/wes_test_simple.nf` [chaotic_mendel] DSL2 - revision: e1c3524c4f
+Sep-05 15:48:14.520 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 15:48:14.520 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 15:48:14.551 [main] DEBUG nextflow.Session - Session UUID: d97584f4-c300-4417-86bd-d2c788b1b97c
+Sep-05 15:48:14.551 [main] DEBUG nextflow.Session - Run name: chaotic_mendel
+Sep-05 15:48:14.551 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 15:48:14.556 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 15:48:14.559 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 15:48:14.576 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (04:27 PDT)
   System: Mac OS X 15.6.1
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
   Encoding: UTF-8 (UTF-8)
-  Process: 17885@LiLei-M36.local [127.0.0.1]
-  CPUs: 16 - Mem: 48 GB (197.9 MB) - Swap: 0 (0)
-Sep-05 15:29:02.937 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
-Sep-05 15:29:02.938 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
-Sep-05 15:29:02.944 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-05 15:29:02.948 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Sep-05 15:29:02.950 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-05 15:29:02.961 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-05 15:29:02.965 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Sep-05 15:29:02.991 [main] DEBUG nextflow.Session - Session start
-Sep-05 15:29:03.304 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Sep-05 15:29:03.309 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
-Sep-05 15:29:03.312 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1e98b788] - activable => nextflow.secret.LocalSecretsProvider@1e98b788
-Sep-05 15:29:03.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Sep-05 15:29:03.378 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Sep-05 15:29:03.380 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Sep-05 15:29:03.383 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
-Sep-05 15:29:03.383 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Sep-05 15:29:03.396 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'METHYLATION_TEST': maxForks=0; fair=false; array=0
-Sep-05 15:29:03.421 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: METHYLATION_TEST
-Sep-05 15:29:03.422 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Sep-05 15:29:03.422 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > METHYLATION_TEST
-Sep-05 15:29:03.422 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_eaee0429bbcba797: /Users/lilei/Downloads/CENTAUR/workflows/methylation_test_simple.nf
-Sep-05 15:29:03.422 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Sep-05 15:29:03.423 [main] DEBUG nextflow.Session - Session await
-Sep-05 15:29:03.459 [Actor Thread 11] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_002/TEST_002_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_002/TEST_002_R1.fastq.gz
-Sep-05 15:29:03.459 [Actor Thread 9] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_001/TEST_001_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_001/TEST_001_R1.fastq.gz
-Sep-05 15:29:03.459 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_003/TEST_003_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/methylation/TEST_003/TEST_003_R1.fastq.gz
-Sep-05 15:29:03.489 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:29:03.490 [Task submitter] INFO  nextflow.Session - [e2/cfc6d6] Submitted process > METHYLATION_TEST (TEST_002)
-Sep-05 15:29:03.495 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:29:03.495 [Task submitter] INFO  nextflow.Session - [8a/12220b] Submitted process > METHYLATION_TEST (TEST_001)
-Sep-05 15:29:03.497 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Sep-05 15:29:03.498 [Task submitter] INFO  nextflow.Session - [bf/4b9c45] Submitted process > METHYLATION_TEST (TEST_003)
-Sep-05 15:29:04.723 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: METHYLATION_TEST (TEST_001); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/8a/12220b5800d3d28a366a2cc2466dbc]
-Sep-05 15:29:04.723 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:29:04.724 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: METHYLATION_TEST (TEST_003); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/bf/4b9c454c6930ba3430919658331b75]
-Sep-05 15:29:04.727 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: METHYLATION_TEST (TEST_002); status: COMPLETED; exit: 0; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/e2/cfc6d6689dcbeabbcdccbd2adc4293]
-Sep-05 15:29:04.736 [main] DEBUG nextflow.Session - Session await > all processes finished
-Sep-05 15:29:04.736 [Actor Thread 7] ERROR nextflow.extension.OperatorImpl - @unknown
-groovy.lang.MissingPropertyException: Exception evaluating property 'text' for nextflow.util.ArrayBag, Reason: groovy.lang.MissingPropertyException: No such property: text for class: java.lang.String
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAtIterable(DefaultGroovyMethods.java:8649)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getAt(DefaultGroovyMethods.java:8637)
-	at groovy.lang.MetaClassImpl$7.getProperty(MetaClassImpl.java:2114)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at Script_eaee0429bbcba797$_runScript_closure2$_closure9$_closure13.doCall(Script_eaee0429bbcba797:79)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
-	at nextflow.extension.MapOp$_apply_closure1.doCall(MapOp.groovy:56)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
-	at groovy.lang.Closure.call(Closure.java:433)
-	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
-	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.onMessage(DataflowOperatorActor.java:108)
-	at groovyx.gpars.actor.impl.SDAClosure$1.call(SDAClosure.java:43)
-	at groovyx.gpars.actor.AbstractLoopingActor.runEnhancedWithoutRepliesOnMessages(AbstractLoopingActor.java:293)
-	at groovyx.gpars.actor.AbstractLoopingActor.access$400(AbstractLoopingActor.java:30)
-	at groovyx.gpars.actor.AbstractLoopingActor$1.handleMessage(AbstractLoopingActor.java:93)
-	at groovyx.gpars.util.AsyncMessagingCore.run(AsyncMessagingCore.java:132)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Sep-05 15:29:04.743 [Actor Thread 7] DEBUG nextflow.Session - Session aborted -- Cause: Exception evaluating property 'text' for nextflow.util.ArrayBag, Reason: groovy.lang.MissingPropertyException: No such property: text for class: java.lang.String
-Sep-05 15:29:04.748 [Actor Thread 7] DEBUG nextflow.Session - The following nodes are still active:
-  [operator] map
-  [operator] view
+  Process: 21766@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (1.5 GB) - Swap: 0 (0)
+Sep-05 15:48:14.584 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 15:48:14.584 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 15:48:14.593 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 15:48:14.597 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 15:48:14.599 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 15:48:14.611 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 15:48:14.616 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 15:48:14.646 [main] DEBUG nextflow.Session - Session start
+Sep-05 15:48:14.992 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 15:48:14.999 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 15:48:15.006 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1cd6b1bd] - activable => nextflow.secret.LocalSecretsProvider@1cd6b1bd
+Sep-05 15:48:15.084 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-05 15:48:15.084 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-05 15:48:15.087 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-05 15:48:15.091 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=48 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-05 15:48:15.092 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-05 15:48:15.107 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'WES_TEST': maxForks=0; fair=false; array=0
+Sep-05 15:48:15.139 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: WES_TEST
+Sep-05 15:48:15.140 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Sep-05 15:48:15.140 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > WES_TEST
+Sep-05 15:48:15.140 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_3cfa3e09ff7f0e78: /Users/lilei/Downloads/CENTAUR/workflows/wes_test_simple.nf
+Sep-05 15:48:15.140 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-05 15:48:15.140 [main] DEBUG nextflow.Session - Session await
+Sep-05 15:48:15.187 [Actor Thread 16] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_tumor_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_tumor_R1.fastq.gz
+Sep-05 15:48:15.187 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_tumor_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_tumor_R1.fastq.gz
+Sep-05 15:48:15.187 [Actor Thread 15] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_tumor_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_tumor_R1.fastq.gz
+Sep-05 15:48:15.188 [Actor Thread 16] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_normal_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_001/WES_TEST_001_normal_R1.fastq.gz
+Sep-05 15:48:15.188 [Actor Thread 13] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_normal_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_003/WES_TEST_003_normal_R1.fastq.gz
+Sep-05 15:48:15.188 [Actor Thread 15] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_normal_R1.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/lilei/Downloads/CENTAUR/workflows/data/test_data/wes/WES_TEST_002/WES_TEST_002_normal_R1.fastq.gz
+Sep-05 15:48:15.221 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 15:48:15.223 [Task submitter] INFO  nextflow.Session - [7d/5e90d9] Submitted process > WES_TEST (WES_TEST_003)
+Sep-05 15:48:15.229 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 15:48:15.229 [Task submitter] INFO  nextflow.Session - [d8/3a7fd2] Submitted process > WES_TEST (WES_TEST_001)
+Sep-05 15:48:15.233 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-05 15:48:15.233 [Task submitter] INFO  nextflow.Session - [87/e57f55] Submitted process > WES_TEST (WES_TEST_002)
+Sep-05 15:48:15.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: WES_TEST (WES_TEST_003); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/7d/5e90d9c7355ac4c346f4c733be77e4]
+Sep-05 15:48:15.331 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 15:48:15.332 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: WES_TEST (WES_TEST_001); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/d8/3a7fd2aa5e5bd9f59c057cd93ca51e]
+Sep-05 15:48:15.335 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=WES_TEST (WES_TEST_001); work-dir=/Users/lilei/Downloads/CENTAUR/work/d8/3a7fd2aa5e5bd9f59c057cd93ca51e
+  error [nextflow.exception.ProcessFailedException]: Process `WES_TEST (WES_TEST_001)` terminated with an error exit status (1)
+Sep-05 15:48:15.337 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: WES_TEST (WES_TEST_002); status: COMPLETED; exit: 1; error: -; workDir: /Users/lilei/Downloads/CENTAUR/work/87/e57f5523e78cf6bf8cb78a12bf808d]
+Sep-05 15:48:15.343 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'WES_TEST (WES_TEST_001)'
 
-Sep-05 15:29:04.749 [Actor Thread 7] ERROR nextflow.Nextflow - 
+Caused by:
+  Process `WES_TEST (WES_TEST_001)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  echo "Processing WES data for WES_TEST_001" > WES_TEST_001_wes_test.txt
+      echo "Sample type: Cancer" >> WES_TEST_001_wes_test.txt
+      echo "Cancer type: CRC" >> WES_TEST_001_wes_test.txt
+      echo "Stage: Early" >> WES_TEST_001_wes_test.txt
+      echo "Tumor file: WES_TEST_001_tumor_R1.fastq.gz" >> WES_TEST_001_wes_test.txt
+      echo "Normal file: WES_TEST_001_normal_R1.fastq.gz" >> WES_TEST_001_wes_test.txt
+      echo "Processing completed at: $(date)" >> WES_TEST_001_wes_test.txt
+      
+      # Simulate somatic variant calling
+      python3 -c "
+      import pandas as pd
+      import numpy as np
+      import random
+      
+      # Define key cancer genes
+      cancer_genes = ['TP53', 'KRAS', 'PIK3CA', 'APC', 'EGFR', 'BRAF', 'MYC', 'TERT']
+      
+      # Simulate somatic variants based on sample type
+      variants = []
+      
+      if 'Cancer' == 'Cancer':
+          # Cancer samples: higher mutation burden
+          num_variants = random.randint(15, 35)
+          mutation_rate = 0.03
+      else:
+          # Control samples: lower mutation burden
+          num_variants = random.randint(2, 8)
+          mutation_rate = 0.005
+      
+      # Generate somatic variants
+      for i in range(num_variants):
+          gene = random.choice(cancer_genes)
+          mutation_type = random.choice(['SNV', 'INDEL'])
+          
+          if mutation_type == 'SNV':
+              ref = random.choice(['A', 'T', 'G', 'C'])
+              alt = random.choice([b for b in ['A', 'T', 'G', 'C'] if b != ref])
+          else:
+              ref = random.choice(['AT', 'GC', 'TA', 'CG'])
+              alt = random.choice(['A', 'T', 'G', 'C'])
+          
+          variant = {
+              'CHROM': f'chr{random.randint(1, 22)}',
+              'POS': random.randint(1000000, 200000000),
+              'REF': ref,
+              'ALT': alt,
+              'GENE': gene,
+              'TYPE': mutation_type,
+              'QUAL': random.randint(20, 60),
+              'FILTER': 'PASS',
+              'INFO': f'GENE={gene};TYPE={mutation_type}'
+          }
+          variants.append(variant)
+      
+      # Create VCF file
+      vcf_content = '''##fileformat=VCFv4.2
+  ##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">
+  ##INFO=<ID=TYPE,Number=1,Type=String,Description="Mutation type">
+  #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+  '''
+      
+      for variant in variants:
+          vcf_content += f"{variant['CHROM']}\t{variant['POS']}\t.\t{variant['REF']}\t{variant['ALT']}\t{variant['QUAL']}\t{variant['FILTER']}\t{variant['INFO']}\n"
+      
+      with open('WES_TEST_001_somatic_variants.vcf', 'w') as f:
+          f.write(vcf_content)
+      
+      # Calculate TMB (mutations per megabase)
+      exome_size_mb = 30  # Approximate exome size
+      tmb = len(variants) / exome_size_mb
+      
+      with open('WES_TEST_001_tmb.txt', 'w') as f:
+          f.write(f'{tmb:.2f}')
+      
+      # Simulate CNV analysis
+      cnv_data = {
+          'chromosome': ['chr1', 'chr2', 'chr3', 'chr4', 'chr5'],
+          'start': [1000000, 2000000, 3000000, 4000000, 5000000],
+          'end': [2000000, 3000000, 4000000, 5000000, 6000000],
+          'copy_number': [random.randint(1, 4) for _ in range(5)],
+          'log2_ratio': [random.uniform(-1.0, 1.0) for _ in range(5)],
+          'cnv_type': [random.choice(['gain', 'loss', 'normal']) for _ in range(5)]
+      }
+      
+      cnv_df = pd.DataFrame(cnv_data)
+      cnv_df.to_csv('WES_TEST_001_cnv.tsv', sep='	', index=False)
+      
+      # Generate variant features for ML
+      key_mutations = {gene: random.random() < 0.3 for gene in cancer_genes}
+      
+      features = {
+          'sample_id': 'WES_TEST_001',
+          'cancer_type': 'CRC',
+          'stage': 'Early',
+          'sample_type': 'Cancer',
+          'tmb': tmb,
+          'tmb_category': 'High' if tmb > 10 else 'Low',
+          'total_variants': len(variants),
+          'snv_count': sum(1 for v in variants if v['TYPE'] == 'SNV'),
+          'indel_count': sum(1 for v in variants if v['TYPE'] == 'INDEL'),
+          'cnv_gains': sum(1 for cnv in cnv_data['cnv_type'] if cnv == 'gain'),
+          'cnv_losses': sum(1 for cnv in cnv_data['cnv_type'] if cnv == 'loss'),
+          'key_mutations_count': sum(key_mutations.values())
+      }
+      
+      # Add key mutation features
+      for gene, mutated in key_mutations.items():
+          features[f'{gene}_mutated'] = mutated
+      
+      # Save features
+      features_df = pd.DataFrame([features])
+      features_df.to_csv('WES_TEST_001_variant_features.tsv', sep='	', index=False)
+      
+      print(f'Generated WES analysis for WES_TEST_001')
+      print(f'Total variants: {len(variants)}')
+      print(f'TMB: {tmb:.2f} mutations/Mb')
+      print(f'Key mutations: {sum(key_mutations.values())}')
+      "
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+    File "<string>", line 2
+      import pandas as pd
+  IndentationError: unexpected indent
+
+Work dir:
+  /Users/lilei/Downloads/CENTAUR/work/d8/3a7fd2aa5e5bd9f59c057cd93ca51e
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Sep-05 15:48:15.344 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=WES_TEST (WES_TEST_002); work-dir=/Users/lilei/Downloads/CENTAUR/work/87/e57f5523e78cf6bf8cb78a12bf808d
+  error [nextflow.exception.ProcessFailedException]: Process `WES_TEST (WES_TEST_002)` terminated with an error exit status (1)
+Sep-05 15:48:15.344 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=WES_TEST (WES_TEST_003); work-dir=/Users/lilei/Downloads/CENTAUR/work/7d/5e90d9c7355ac4c346f4c733be77e4
+  error [nextflow.exception.ProcessFailedException]: Process `WES_TEST (WES_TEST_003)` terminated with an error exit status (1)
+Sep-05 15:48:15.346 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-05 15:48:15.346 [TaskFinalizer-2] DEBUG nextflow.Session - Session aborted -- Cause: Process `WES_TEST (WES_TEST_001)` terminated with an error exit status (1)
+Sep-05 15:48:15.354 [TaskFinalizer-2] ERROR nextflow.Nextflow - 
     ================================================
-    CENTAUR Methylation Test failed!
+    CENTAUR WES Test failed!
     ================================================
     
-    Error: Exception evaluating property 'text' for nextflow.util.ArrayBag, Reason: groovy.lang.MissingPropertyException: No such property: text for class: java.lang.String
+    Error:   File "<string>", line 2
+    import pandas as pd
+IndentationError: unexpected indent
     
-Sep-05 15:29:04.750 [Actor Thread 7] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
-Sep-05 15:29:04.750 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Sep-05 15:29:04.750 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Sep-05 15:29:04.751 [main] INFO  nextflow.Nextflow - 
+Sep-05 15:48:15.355 [TaskFinalizer-2] DEBUG nextflow.Nextflow - Ignoring exit because execution is already aborted -- message=null
+Sep-05 15:48:15.356 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-05 15:48:15.356 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-05 15:48:15.357 [main] INFO  nextflow.Nextflow - 
     ================================================
-    CENTAUR Methylation Test completed successfully!
+    CENTAUR WES Test completed successfully!
     ================================================
     
-Sep-05 15:29:04.755 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3.4s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
-Sep-05 15:29:04.986 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Sep-05 15:29:04.992 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Sep-05 15:48:15.360 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=3; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=81ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Sep-05 15:48:15.567 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-05 15:48:15.574 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

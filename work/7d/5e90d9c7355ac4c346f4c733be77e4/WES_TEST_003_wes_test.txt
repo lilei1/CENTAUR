@@ -1,0 +1,7 @@
+Processing WES data for WES_TEST_003
+Sample type: Cancer
+Cancer type: Lung
+Stage: Late
+Tumor file: WES_TEST_003_tumor_R1.fastq.gz
+Normal file: WES_TEST_003_normal_R1.fastq.gz
+Processing completed at: Fri Sep  5 15:48:15 PDT 2025

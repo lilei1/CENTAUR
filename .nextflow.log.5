@@ -1,0 +1,59 @@
+Sep-05 15:27:27.243 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/methylation_test.nf
+Sep-05 15:27:27.279 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 15:27:27.289 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 15:27:27.306 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 15:27:27.306 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 15:27:27.307 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 15:27:27.313 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 15:27:27.341 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 15:27:27.348 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/methylation_test.nf` [golden_pesquet] DSL2 - revision: dd8af82913
+Sep-05 15:27:27.349 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 15:27:27.349 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 15:27:27.372 [main] DEBUG nextflow.Session - Session UUID: c9d945da-6819-4ce0-9cfe-2d02cc99113f
+Sep-05 15:27:27.372 [main] DEBUG nextflow.Session - Run name: golden_pesquet
+Sep-05 15:27:27.372 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 15:27:27.376 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 15:27:27.379 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 15:27:27.392 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (04:27 PDT)
+  System: Mac OS X 15.6.1
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
+  Encoding: UTF-8 (UTF-8)
+  Process: 17493@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (232.7 MB) - Swap: 0 (0)
+Sep-05 15:27:27.399 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 15:27:27.399 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 15:27:27.406 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 15:27:27.409 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 15:27:27.412 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 15:27:27.421 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 15:27:27.426 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 15:27:27.452 [main] DEBUG nextflow.Session - Session start
+Sep-05 15:27:27.782 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 15:27:27.787 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 15:27:27.790 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2de9ca6] - activable => nextflow.secret.LocalSecretsProvider@2de9ca6
+Sep-05 15:27:27.792 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_ef97788f0d3e5a49: /Users/lilei/Downloads/CENTAUR/workflows/methylation_test.nf
+Sep-05 15:27:27.794 [main] DEBUG nextflow.Session - Session aborted -- Cause: No signature of method: nextflow.script.ScriptBinding.params() is applicable for argument types: () values: []
+Possible solutions: getParams(), setParams(java.util.Map), stream(), equals(java.lang.Object), print(java.io.PrintWriter), print(java.lang.Object)
+Sep-05 15:27:27.798 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingMethodException: No signature of method: nextflow.script.ScriptBinding.params() is applicable for argument types: () values: []
+Possible solutions: getParams(), setParams(java.util.Map), stream(), equals(java.lang.Object), print(java.io.PrintWriter), print(java.lang.Object)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:113)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.invokeMethod(BaseScript.groovy:155)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.invokeGroovyObjectInvoker(IndyGuardsFiltersAndSignatures.java:151)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_ef97788f0d3e5a49.runScript(Script_ef97788f0d3e5a49:11)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:159)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)

@@ -1,0 +1,2 @@
+sample_id	cancer_type	stage	sample_type	tmb	tmb_category	total_variants	snv_count	indel_count	cnv_gains	cnv_losses	key_mutations_count	TP53_mutated	KRAS_mutated	PIK3CA_mutated	APC_mutated	EGFR_mutated	BRAF_mutated	MYC_mutated	TERT_mutated
+WES_TEST_002	CRC	Early	Control	0.23333333333333334	Low	7	5	2	2	2	3	False	True	True	False	False	True	False	False
