@@ -1,0 +1,6 @@
+Processing RNA-seq data for RNA_TEST_002
+Sample type: Control
+Cancer type: CRC
+Stage: Early
+Input file: RNA_TEST_002_R1.fastq.gz
+Processing completed at: Fri Sep  5 15:36:05 PDT 2025

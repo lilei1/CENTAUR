@@ -1,104 +1,59 @@
-Sep-05 15:27:21.125 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/methylation_test.nf
-Sep-05 15:27:21.157 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
-Sep-05 15:27:21.314 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
-Sep-05 15:27:21.333 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Sep-05 15:27:21.333 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Sep-05 15:27:21.334 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Sep-05 15:27:21.341 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Sep-05 15:27:21.371 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Sep-05 15:27:21.380 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/methylation_test.nf` [astonishing_pike] DSL2 - revision: 97e9d8dfbc
-Sep-05 15:27:21.381 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Sep-05 15:27:21.381 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Sep-05 15:27:21.409 [main] DEBUG nextflow.Session - Session UUID: f5819693-4764-4ed0-bbbd-29c732f258af
-Sep-05 15:27:21.410 [main] DEBUG nextflow.Session - Run name: astonishing_pike
-Sep-05 15:27:21.410 [main] DEBUG nextflow.Session - Executor pool size: 16
-Sep-05 15:27:21.414 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Sep-05 15:27:21.417 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Sep-05 15:27:21.471 [main] DEBUG nextflow.cli.CmdRun - 
+Sep-05 15:27:27.243 [main] DEBUG nextflow.cli.Launcher - $> nextflow run workflows/methylation_test.nf
+Sep-05 15:27:27.279 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Sep-05 15:27:27.289 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/lilei/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Sep-05 15:27:27.306 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-05 15:27:27.306 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-05 15:27:27.307 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-05 15:27:27.313 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-05 15:27:27.341 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-05 15:27:27.348 [main] DEBUG nextflow.cli.CmdRun - Launching `workflows/methylation_test.nf` [golden_pesquet] DSL2 - revision: dd8af82913
+Sep-05 15:27:27.349 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-05 15:27:27.349 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-05 15:27:27.372 [main] DEBUG nextflow.Session - Session UUID: c9d945da-6819-4ce0-9cfe-2d02cc99113f
+Sep-05 15:27:27.372 [main] DEBUG nextflow.Session - Run name: golden_pesquet
+Sep-05 15:27:27.372 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-05 15:27:27.376 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-05 15:27:27.379 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-05 15:27:27.392 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.6 build 5954
   Created: 01-07-2025 11:27 UTC (04:27 PDT)
   System: Mac OS X 15.6.1
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.6+9-b895.97
   Encoding: UTF-8 (UTF-8)
-  Process: 17370@LiLei-M36.local [127.0.0.1]
-  CPUs: 16 - Mem: 48 GB (183.2 MB) - Swap: 0 (0)
-Sep-05 15:27:21.484 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
-Sep-05 15:27:21.485 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
-Sep-05 15:27:21.495 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Sep-05 15:27:21.500 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Sep-05 15:27:21.502 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Sep-05 15:27:21.513 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Sep-05 15:27:21.518 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
-Sep-05 15:27:21.548 [main] DEBUG nextflow.Session - Session start
-Sep-05 15:27:21.646 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-Sep-05 15:27:21.650 [main] ERROR nextflow.cli.Launcher - Script compilation error
-- file : /Users/lilei/Downloads/CENTAUR/workflows/methylation_test.nf
-- cause: token recognition error at: '(' @ line 36, column 37.
-       echo "Processing completed at: $(date)" >> ${sample_id}_methylation_test.txt
-                                       ^
-
-1 error
-
-nextflow.exception.ScriptCompilationException: Script compilation error
-- file : /Users/lilei/Downloads/CENTAUR/workflows/methylation_test.nf
-- cause: token recognition error at: '(' @ line 36, column 37.
-       echo "Processing completed at: $(date)" >> ${sample_id}_methylation_test.txt
-                                       ^
-
-1 error
-
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse0(ScriptLoaderV1.groovy:204)
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse(ScriptLoaderV1.groovy:215)
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse(ScriptLoaderV1.groovy)
-	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:232)
-	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:137)
+  Process: 17493@LiLei-M36.local [127.0.0.1]
+  CPUs: 16 - Mem: 48 GB (232.7 MB) - Swap: 0 (0)
+Sep-05 15:27:27.399 [main] DEBUG nextflow.Session - Work-dir: /Users/lilei/Downloads/CENTAUR/work [Mac OS X]
+Sep-05 15:27:27.399 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/lilei/Downloads/CENTAUR/workflows/bin
+Sep-05 15:27:27.406 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-05 15:27:27.409 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-05 15:27:27.412 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-05 15:27:27.421 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-05 15:27:27.426 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-05 15:27:27.452 [main] DEBUG nextflow.Session - Session start
+Sep-05 15:27:27.782 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-05 15:27:27.787 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/lilei/.nextflow/secrets/store.json
+Sep-05 15:27:27.790 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2de9ca6] - activable => nextflow.secret.LocalSecretsProvider@2de9ca6
+Sep-05 15:27:27.792 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_ef97788f0d3e5a49: /Users/lilei/Downloads/CENTAUR/workflows/methylation_test.nf
+Sep-05 15:27:27.794 [main] DEBUG nextflow.Session - Session aborted -- Cause: No signature of method: nextflow.script.ScriptBinding.params() is applicable for argument types: () values: []
+Possible solutions: getParams(), setParams(java.util.Map), stream(), equals(java.lang.Object), print(java.io.PrintWriter), print(java.lang.Object)
+Sep-05 15:27:27.798 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingMethodException: No signature of method: nextflow.script.ScriptBinding.params() is applicable for argument types: () values: []
+Possible solutions: getParams(), setParams(java.util.Map), stream(), equals(java.lang.Object), print(java.io.PrintWriter), print(java.lang.Object)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:113)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.invokeMethod(BaseScript.groovy:155)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.invokeGroovyObjectInvoker(IndyGuardsFiltersAndSignatures.java:151)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_ef97788f0d3e5a49.runScript(Script_ef97788f0d3e5a49:11)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:159)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
 	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
 	at nextflow.cli.Launcher.run(Launcher.groovy:513)
 	at nextflow.cli.Launcher.main(Launcher.groovy:673)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-Script_9217b4ac4fa5a3a2: 36: token recognition error at: '(' @ line 36, column 37.
-       echo "Processing completed at: $(date)" >> ${sample_id}_methylation_test.txt
-                                       ^
-
-1 error
-
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:148)
-	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4730)
-	at org.apache.groovy.parser.antlr4.AstBuilder.access$100(AstBuilder.java:169)
-	at org.apache.groovy.parser.antlr4.AstBuilder$3.syntaxError(AstBuilder.java:4741)
-	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
-	at groovyjarjarantlr4.v4.runtime.Lexer.notifyListeners(Lexer.java:381)
-	at groovyjarjarantlr4.v4.runtime.Lexer.nextToken(Lexer.java:145)
-	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.fetch(BufferedTokenStream.java:170)
-	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.sync(BufferedTokenStream.java:153)
-	at groovyjarjarantlr4.v4.runtime.BufferedTokenStream.consume(BufferedTokenStream.java:137)
-	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.execDFA(ParserATNSimulator.java:559)
-	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:408)
-	at groovyjarjarantlr4.v4.runtime.atn.ParserATNSimulator.adaptivePredict(ParserATNSimulator.java:356)
-	at org.apache.groovy.parser.antlr4.GroovyParser.commandExpression(GroovyParser.java:9702)
-	at org.apache.groovy.parser.antlr4.GroovyParser.statementExpression(GroovyParser.java:8233)
-	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:7078)
-	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:517)
-	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:427)
-	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:363)
-	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:243)
-	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:221)
-	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:262)
-	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
-	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:256)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:663)
-	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:365)
-	at groovy.lang.GroovyClassLoader.lambda$parseClass$2(GroovyClassLoader.java:314)
-	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
-	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314)
-	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:572)
-	at groovy.lang.GroovyShell.parse(GroovyShell.java:585)
-	at groovy.lang.GroovyShell.parse(GroovyShell.java:639)
-	at groovy.lang.GroovyShell.parse(GroovyShell.java:643)
-	at nextflow.script.parser.v1.ScriptLoaderV1.parse0(ScriptLoaderV1.groovy:183)
-	... 7 common frames omitted

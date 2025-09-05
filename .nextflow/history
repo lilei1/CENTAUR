@@ -2,3 +2,4 @@
 2025-09-05 15:27:27	-	golden_pesquet	-	dd8af82913b1f735858197853ccdf390	c9d945da-6819-4ce0-9cfe-2d02cc99113f	nextflow run workflows/methylation_test.nf
 2025-09-05 15:28:33	863ms	friendly_banach	ERR	a778ec4d2b7526241bfd23ba693325c4	5a94f049-2710-49a0-a3d9-3c6c8a998cf6	nextflow run workflows/methylation_test_simple.nf
 2025-09-05 15:29:02	3s	ecstatic_euler	ERR	69074b4ba0d19a84a6fc2554f567a731	23af6c95-66e2-4599-b4a5-b2e6b0bc7bd7	nextflow run workflows/methylation_test_simple.nf
+2025-09-05 15:36:04	1.6s	dreamy_kowalevski	OK	bf60c672e8db4418b88c51bd6bfb4f78	1536231d-86a1-42ff-ae2d-b9b8f601ed36	nextflow run workflows/rnaseq_test_simple.nf
